@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "AutoCardLink": {
+      "source": "https://github.com/Cookei/AutoCardLink",
+      "resolved": "https://github.com/Cookei/AutoCardLink",
+      "commit": "4a8c677e489b5b718e2de2cf36635c6aa9b6bd53",
+      "installedAt": "2026-06-28T07:10:30.670Z"
+    },
     "alias-redirects": {
       "source": "github:quartz-community/alias-redirects",
       "resolved": "https://github.com/quartz-community/alias-redirects.git",
@@ -192,6 +198,12 @@
       "resolved": "https://github.com/quartz-community/page-title.git",
       "commit": "a1c1fe0a9c6a5ce1acf6efa01d473a7d9850e2a3",
       "installedAt": "2026-06-08T05:31:06.606Z"
+    },
+    "quartz-image-zoom": {
+      "source": "https://github.com/Cookei/quartz-image-zoom",
+      "resolved": "https://github.com/Cookei/quartz-image-zoom",
+      "commit": "c8c1c8b485978816cd5573ce082752f0bd716084",
+      "installedAt": "2026-06-28T07:06:10.890Z"
     },
     "quartz-themes": {
       "source": {

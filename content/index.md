@@ -1,6 +1,4 @@
 ---
-title: Welcome to Quartz
+title: UCBUGG
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+This site is intended to host all of the UCBUGG course content, as well as a living textbook for graphics content
