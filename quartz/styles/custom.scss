@@ -4,3 +4,19 @@
 code {
   border-radius: 0;
 }
+
+.lightbox-image {
+  margin: 0;
+}
+
+.callout-content {
+  overflow: visible;
+}
+
+blockquote.is-collapsed {
+  cursor: pointer;
+}
+
+blockquote.is-collapsible .callout-title {
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 ---
 tags:
-  - note
+  - homework
 author:
 ---

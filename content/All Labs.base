@@ -4,6 +4,7 @@ views:
     filters:
       and:
         - file.hasTag("lab")
+        - file.folder != "templates"
     order:
       - file.name
     image: note.image
@@ -11,14 +12,22 @@ views:
     name: Pre-Production
     filters:
       and:
-        - file.hasTag("lab", "pre-production")
+        - file.hasTag("lab")
+        - file.hasTag("pre-production")
     order:
       - file.name
+    sort:
+      - property: file.name
+        direction: ASC
     image: note.image
     imageAspectRatio: 1
   - type: cards
     name: Modeling
     filters:
       and:
-        - file.hasTag("lab", "modeling")
+        - file.hasTag("lab")
+        - file.hasTag("modeling")
+    sort:
+      - property: file.name
+        direction: ASC
     image: note.image

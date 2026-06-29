@@ -255,7 +255,6 @@ plugins:
       includeAll: false
       includedProperties:
         - description
-        - aliases
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
