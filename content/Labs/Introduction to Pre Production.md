@@ -85,9 +85,9 @@ image: https://i.vimeocdn.com/video/550986097-3a3474fba65b82c44cffae1e46d33cf4a6
 
 # Visual Development
 
-We use the term 'visual development' to encompass all parts of design within story. It is a broad term, and it determines how the visual look of your final film will turn out. Where storyboarding plans out the stage and framing, visual development plans out the aesthetic.
+We use the term 'visual development' to encompass all parts of design within story. It is a broad term, and it determines how the visual look of your final film will turn out. Where [[storyboard|storyboarding]] plans out the stage and framing, visual development plans out the aesthetic.
 
-In general, vis dev artists like to see and reference art in any setting - whether it be from art books/museums/more. Referencing traditional art and analyzing how and why it is effective is going to be very very very very useful.
+In general, vis dev artists like to see and [[Mood Board|reference art]] in any setting - whether it be from art books/museums/more. Referencing traditional art and analyzing how and why it is effective is going to be very very very very useful.
 
 ## Style
 

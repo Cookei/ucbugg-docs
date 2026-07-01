@@ -4,7 +4,11 @@ import { FileTrieNode } from "./quartz/util/fileTrie"
 
 ExternalPlugin.Explorer({
   filterFn: (node: FileTrieNode) => {
-    return node.slugSegment !== "tags" && node.slugSegment !== "labs"
+    return (
+      node.slugSegment !== "tags" &&
+      node.slugSegment !== "labs" &&
+      node.slugSegment !== "attachments"
+    )
   },
 })
 

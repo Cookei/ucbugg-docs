@@ -2,7 +2,7 @@
 tags:
   - lab
   - modeling
-image: "[[placeholder-image.png]]"
+image: "[[THUMBNAIL-modeling1.png]]"
 author:
 draft: false
 cssclasses:
@@ -16,7 +16,7 @@ This lab explores the basics of polygon modeling in Maya by making a simple toil
 # Modeling the Bowl
 
 > [!warning]  
-> First, let's make sure that interactive creation is turned off. From the menu at the top, go to <samp>Create</samp> → <samp>Polygon Primitives</samp>. Click the <samp>Interactive Creation</samp> entry on the menu to uncheck the box (if it is not already unchecked somehow). Now go ahead and create a cylinder: <samp>Create</samp> → <samp>Polygon Primitives</samp> → <samp>Cylinder</samp>.
+> First, let's make sure that [interactive creation](https://help.autodesk.com/view/MAYAUL/2026/ENU/?guid=GUID-6D21314A-54AD-41D4-AFC0-AAED13CD50A6) is turned off. From the menu at the top, go to <samp>Create</samp> → <samp>Polygon Primitives</samp>. Click the <samp>Interactive Creation</samp> entry on the menu to uncheck the box (if it is not already unchecked somehow). Now go ahead and create a cylinder: <samp>Create</samp> → <samp>Polygon Primitives</samp> → <samp>Cylinder</samp>.
 >
 > ![[Pasted image 20251108212551.png]]
 
@@ -236,3 +236,5 @@ It is up to you whether you would like to group or combine the different parts o
 **Fourth**: SAVE YOUR TOILET IF YOU HAVE NOT ALREADY! (save your file as often as you can)
 
 At last we have our final, beautiful toilet! However, notice that it's missing some of the details a real toilet would have (like a flusher or hinges or bowl internals or a base). Feel free to be creative at this point; add any more details that you would like to experiment with. For the purposes of this lab, however, we only expect the basic toilet shape like in the picture below:
+
+![[THUMBNAIL-modeling1.png]]

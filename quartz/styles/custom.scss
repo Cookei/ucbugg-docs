@@ -9,6 +9,10 @@ code {
   margin: 0;
 }
 
+.lightbox-wrapper {
+  width: fit-content;
+}
+
 .callout-content {
   overflow: visible;
 }
@@ -19,4 +23,30 @@ blockquote.is-collapsed {
 
 blockquote.is-collapsible .callout-title {
   cursor: pointer;
+}
+
+kbd {
+  background-color: var(--lightgray);
+  padding: 2px 5px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+@layer quartz-base {
+  a.internal {
+    padding: 0;
+  }
+  a.bases-card {
+    justify-content: space-between;
+    aspect-ratio: 1/1;
+  }
+  .bases-card-image {
+    height: 100%;
+    img {
+      object-fit: cover;
+      margin: 0;
+    }
+  }
 }
