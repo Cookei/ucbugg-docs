@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"8deabcdf5180add1","type":"file","file":"Course Notes/attachments/Mood Board/attachments/The Tank/Pasted image 20260630225127.png","x":0,"y":0,"width":400,"height":233},
+		{"id":"6c45ea036c98f7be","type":"file","file":"Course Notes/attachments/Mood Board/attachments/The Tank/Pasted image 20260630225132.png","x":0,"y":260,"width":400,"height":243},
+		{"id":"ee705123897da83d","type":"file","file":"Course Notes/attachments/Mood Board/attachments/The Tank/Pasted image 20260630225142.png","x":440,"y":10,"width":400,"height":214},
+		{"id":"8be889542b38582c","x":440,"y":289,"width":400,"height":214,"type":"file","file":"Course Notes/attachments/Mood Board/attachments/The Tank/Pasted image 20260630225153.png"}
+	],
+	"edges":[]
+}
