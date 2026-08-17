@@ -45,6 +45,12 @@ Here's some mood boards from the UCBUGG Student Short, [Udderworldy](https://www
 
 ![[Pasted image 20260701010339.png]]
 
+## Catfish
+
+Here are some mood boards from the UCBUGG Student Short, [Catfish](https://www.youtube.com/watch?v=FM4TZE_0Q7c)
+
+![[Pasted image 20260702151133.png]]
+
 # Resources
 
 Here are some nifty resources you can use to compile mood boards/reference boards
