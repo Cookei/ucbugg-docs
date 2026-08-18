@@ -3,6 +3,10 @@ title: UCBUGG
 ---
 This site is intended to host all of the UCBUGG course content, as well as a living textbook for graphics content
 
+# UCBUGG Fall 2026
+
+**Head Facilitators**: Han Li, Travis Le / **Lecture**: M/W, 7:00-9:00 PM, [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/), [YouTube](https://www.youtube.com/@UCBUGG)
+
 | Week | Topic                                 | Slides | Recording | Homework                        |
 | ---- | ------------------------------------- | ------ | --------- | ------------------------------- |
 | 1    | Intro to Maya / Infosession           |        |           |                                 |
