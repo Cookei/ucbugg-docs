@@ -10,9 +10,9 @@ version: Fall 2026
 - **Course Website**: [ucbugg.com](https://www.ucbugg.com/)
 - **Class Time and Location**:
 	- **Section 003**:
-		- Monday | 7:00pm - 9:00pm | Gateway B1015
+		- Monday | 7:00pm - 9:00pm | [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
 	- **Section 303**:
-		- Wednesday | 7:00-pm - 9:00pm | Gateway B1015
+		- Wednesday | 7:00-pm - 9:00pm | [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
 - **Unit Information**: CS 198-003, CS 198-303, 3 units P/NP
 - **Prerequisites**: None
 - **Time Conflicts**: Not Allowed

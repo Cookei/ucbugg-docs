@@ -1,16 +1,41 @@
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
-import * as ExternalPlugin from "./.quartz/plugins"
+import { Explorer, ExplorerOptions } from "@quartz-community/explorer"
+import { componentRegistry } from "./quartz/components/registry"
 
-ExternalPlugin.Explorer({
+componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   filterFn: (node) => {
-    console.log(node.slugSegment)
     return (
       node.slugSegment !== "tags" &&
       node.slugSegment !== "labs" &&
-      node.slugSegment !== "attachments"
+      node.slugSegment !== "attachments" &&
+      node.slugSegment !== "homework"
     )
   },
-})
+  sortFn: (a, b) => {
+    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+      if (a.displayName && b.displayName) {
+        return a.displayName.localeCompare(b.displayName, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        })
+      }
+    }
+
+    if (!a.isFolder && b.isFolder) {
+      return -1
+    } else {
+      return 1
+    }
+  },
+  // mapFn: (node) => {
+  //   if (node.isFolder) {
+  //     node.displayName = "📁 " + node.displayName
+  //   } else {
+  //     node.displayName = "📄 " + node.displayName
+  //   }
+  //   return node
+  // },
+} as Partial<ExplorerOptions>)
 
 const config = await loadQuartzConfig()
 export default config

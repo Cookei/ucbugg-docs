@@ -1,0 +1,53 @@
+@use "./variables.scss" as *;
+
+:root[saved-theme="light"],
+html[saved-theme="light"] {
+  body {
+    color-scheme: light;
+    background-image: url("/static/bg.png");
+
+    @media all and ($desktop) {
+      #quartz-body {
+        background: linear-gradient(
+          to right,
+          transparent,
+          #fefaf483 15%,
+          #fefaf483 85%,
+          transparent
+        );
+      }
+
+      h2.page-title::before {
+        background-image: url("/static/icon.png");
+      }
+    }
+    .callout {
+      --callout-blend-mode: darken;
+    }
+
+    code[data-theme*=" "] {
+      color: var(--shiki-light);
+      background-color: var(--shiki-light-bg);
+    }
+
+    code[data-theme*=" "] span {
+      color: var(--shiki-light);
+    }
+
+    .example-component {
+      background: linear-gradient(135deg, #eaac66 0%, #cc7e52 100%) !important;
+    }
+
+    //%%:root%--accent-h%%
+    //%%:root%--accent-s%%
+    //%%:root%--accent-l%%
+    //%%body%--accent-h%%
+    //%%body%--accent-s%%
+    //%%body%--accent-l%%
+    //%%.theme-light%--accent-h%%
+    //%%.theme-light%--accent-s%%
+    //%%.theme-light%--accent-l%%
+
+    //%%.theme-light%%
+  }
+}

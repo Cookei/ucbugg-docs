@@ -1,6 +1,7 @@
 ---
 tags:
 author:
+custom-page: staff
 ---
 
 # Head Facilitators

@@ -1,6 +1,85 @@
 @use "./variables.scss" as *;
+@use "./light.scss" as *;
+@use "./dark.scss" as *;
 
 // put your custom CSS here!
+
+//%%EXTRAS%%
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  /* Ensure rem units are based on a 16px root font size */
+  font-size: 16px;
+  font-family: var(--bodyFont);
+}
+
+.explorer .explorer-toggle {
+  pointer-events: none;
+}
+
+.explorer .explorer-toggle .fold {
+  display: none;
+}
+
+.explorer .explorer-content {
+  margin-left: 1rem;
+}
+
+@media all and ($desktop) {
+  .left.sidebar::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 32px * 2);
+    bottom: 0;
+    height: 350px;
+    background-image: url("/static/melchan_uwoah.webp");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    animation: bobUpAndDown 5s ease-in-out infinite;
+    filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.15));
+  }
+
+  .left.sidebar:hover::after {
+    animation-duration: 0.3s;
+  }
+
+  @keyframes bobUpAndDown {
+    0% {
+      transform: perspective(75em) rotateY(18deg) translateY(0);
+    }
+    50% {
+      transform: perspective(75em) rotateY(5deg) translateY(-16px);
+    }
+    100% {
+      transform: perspective(75em) rotateY(18deg) translateY(0);
+    }
+  }
+
+  h2.page-title {
+    position: relative;
+    padding-left: 3.5rem;
+  }
+  h2.page-title::before {
+    content: ""; /* Required for the pseudo-element to render */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centers the image vertically */
+    width: 3.5rem; /* Set your desired image width */
+    height: 3.5rem; /* Set your desired image height */
+    background-size: contain; /* Ensures the image fits inside the width/height */
+    background-repeat: no-repeat;
+  }
+}
+
+samp {
+  text-decoration: underline;
+}
+
 code {
   border-radius: 0;
 }
@@ -32,6 +111,7 @@ kbd {
   border-radius: 3px;
   font-family: monospace;
   font-size: 0.9em;
+  white-space: nowrap;
 }
 
 @layer quartz-base {
@@ -49,4 +129,26 @@ kbd {
       margin: 0;
     }
   }
+}
+
+tr {
+  border-top: 1px solid var(--lightgray);
+}
+
+thead tr {
+  border-top: none;
+}
+
+td,
+th {
+  padding: 6px 13px;
+}
+
+th {
+  border-top: none;
+}
+
+table img {
+  background-color: transparent;
+  transform: none;
 }

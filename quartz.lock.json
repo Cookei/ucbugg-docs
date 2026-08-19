@@ -4,8 +4,8 @@
     "AutoCardLink": {
       "source": "https://github.com/Cookei/AutoCardLink",
       "resolved": "https://github.com/Cookei/AutoCardLink",
-      "commit": "4a8c677e489b5b718e2de2cf36635c6aa9b6bd53",
-      "installedAt": "2026-06-28T07:10:30.670Z"
+      "commit": "80607f763269108c90de376c9d00b8c63c88e1d2",
+      "installedAt": "2026-08-18T11:34:08.966Z"
     },
     "alias-redirects": {
       "source": "github:quartz-community/alias-redirects",

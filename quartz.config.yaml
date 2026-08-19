@@ -153,7 +153,7 @@ plugins:
       showSubFolders: false
   - source: github:quartz-community/tag-page
     enabled: true
-  - source: github:quartz-community/explorer
+  - source: "@quartz-community/explorer"
     enabled: true
     options:
       folderClickBehavior: collapse
@@ -161,7 +161,7 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    enabled: true
+    enabled: false
     options:
       localGraph:
         showTags: false
@@ -252,7 +252,7 @@ plugins:
   - source: github:quartz-community/note-properties
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - author
@@ -282,11 +282,14 @@ plugins:
   - source: https://github.com/Cookei/AutoCardLink
     enabled: true
     options: {}
-    order: 30
+    order: 69
+    layout:
+      position: left
+      priority: 40
   - source: https://github.com/Cookei/quartz-image-zoom
     enabled: true
     options: {}
-    order: 35
+    order: 70
 layout:
   groups:
     toolbar:
