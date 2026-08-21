@@ -6,7 +6,19 @@ html[saved-theme="light"] {
     color-scheme: light;
     background-image: url("/static/bg.png");
 
+    ::selection {
+      background-color: rgb(255, 202, 141);
+    }
+
+    .example-component[data-isLab="false"] {
+      background-color: var(--light);
+    }
+
     @media all and ($desktop) {
+      .search-container.active {
+        background-color: rgba(255, 249, 240, 0.575);
+      }
+
       #quartz-body {
         background: linear-gradient(
           to right,
@@ -17,8 +29,8 @@ html[saved-theme="light"] {
         );
       }
 
-      h2.page-title::before {
-        background-image: url("/static/icon.png");
+      h2.page-title a::before {
+        background-image: url("/static/logo.png");
       }
     }
     .callout {

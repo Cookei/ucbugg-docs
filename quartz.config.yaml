@@ -166,7 +166,9 @@ plugins:
       localGraph:
         showTags: false
       globalGraph:
-        removeTags: [homework, lab]
+        removeTags:
+          - homework
+          - lab
     layout:
       position: right
       priority: 10
@@ -198,7 +200,7 @@ plugins:
     layout:
       position: beforeBody
       priority: 30
-  - source: github:quartz-community/page-title
+  - source: github:cookei/page-title
     enabled: true
     layout:
       position: left
@@ -279,17 +281,37 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
-  - source: https://github.com/Cookei/AutoCardLink
-    enabled: true
-    options: {}
-    order: 69
-    layout:
-      position: left
-      priority: 40
   - source: https://github.com/Cookei/quartz-image-zoom
     enabled: true
     options: {}
     order: 70
+  - source: github:satche/quartz-navbar
+    enabled: false
+    options:
+      links:
+        - label: Home
+          href: /
+        - label: About
+          href: /about
+    order: 50
+    layout:
+      position: header
+  - source: D:\Documents\Github\sidebar-decoration
+    enabled: true
+    options:
+      lightSrc: /static/melchan_uwoah.webp
+      darkSrc: /static/melchan_uwoah_dark.png
+    order: 50
+    layout:
+      position: left
+      priority: 50
+  - source: C:\Users\HanLi\Desktop\Repo\auto-card-link-v5
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: right
+      priority: 10
 layout:
   groups:
     toolbar:

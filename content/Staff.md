@@ -1,15 +1,18 @@
 ---
 tags:
 author:
-custom-page: staff
+cssclasses:
+  - staff-page
 ---
 
 # Head Facilitators
 
-| Image                   | Name      | Pronouns | Description |
-| ----------------------- | --------- | -------- | ----------- |
-| ![[Han Li.jpg\|100]]    | Han Li    | she/her  |             |
-| ![[Travis Le.jpg\|100]] | Travis Le | he/him   |             |
+| Image                   | Name        | Pronouns |
+| ----------------------- | ----------- | -------- |
+| ![[Han Li.jpg\|100]]    | Han Li      | she/her  |
+| ^                       | Description | <        |
+| ![[Travis Le.jpg\|100]] | Travis Le   | he/him   |
+| ^                       | Description | <        |
 
 # Facilitators
 

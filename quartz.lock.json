@@ -1,12 +1,6 @@
 {
   "version": "1.0.0",
   "plugins": {
-    "AutoCardLink": {
-      "source": "https://github.com/Cookei/AutoCardLink",
-      "resolved": "https://github.com/Cookei/AutoCardLink",
-      "commit": "80607f763269108c90de376c9d00b8c63c88e1d2",
-      "installedAt": "2026-08-18T11:34:08.966Z"
-    },
     "alias-redirects": {
       "source": "github:quartz-community/alias-redirects",
       "resolved": "https://github.com/quartz-community/alias-redirects.git",
@@ -18,6 +12,12 @@
       "resolved": "https://github.com/quartz-community/article-title.git",
       "commit": "87499a64e8b9af69bfce23dd5985a33176b14b5e",
       "installedAt": "2026-08-17T23:27:47.356Z"
+    },
+    "auto-card-link-v5": {
+      "source": "C:\\Users\\HanLi\\Desktop\\Repo\\auto-card-link-v5",
+      "resolved": "C:\\Users\\HanLi\\Desktop\\Repo\\auto-card-link-v5",
+      "commit": "local",
+      "installedAt": "2026-08-21T07:57:35.281Z"
     },
     "backlinks": {
       "source": "github:quartz-community/backlinks",
@@ -202,8 +202,14 @@
     "quartz-image-zoom": {
       "source": "https://github.com/Cookei/quartz-image-zoom",
       "resolved": "https://github.com/Cookei/quartz-image-zoom",
-      "commit": "c8c1c8b485978816cd5573ce082752f0bd716084",
-      "installedAt": "2026-06-28T07:06:10.890Z"
+      "commit": "def4f540710cb2706c73e4212a4035f9c2130a3d",
+      "installedAt": "2026-08-21T07:30:13.051Z"
+    },
+    "quartz-navbar": {
+      "source": "github:satche/quartz-navbar",
+      "resolved": "https://github.com/satche/quartz-navbar.git",
+      "commit": "56710a3bf855ba114a7f6ac77453c997acbbb528",
+      "installedAt": "2026-08-20T21:43:04.684Z"
     },
     "quartz-themes": {
       "source": {
@@ -245,6 +251,12 @@
       "resolved": "https://github.com/quartz-community/search.git",
       "commit": "1d9ba593230b997ee4cf0cc3c1ed4a30b571cee2",
       "installedAt": "2026-08-17T23:27:48.670Z"
+    },
+    "sidebar-decoration": {
+      "source": "D:\\Documents\\Github\\sidebar-decoration",
+      "resolved": "D:\\Documents\\Github\\sidebar-decoration",
+      "commit": "local",
+      "installedAt": "2026-08-20T23:54:45.114Z"
     },
     "spacer": {
       "source": "github:quartz-community/spacer",

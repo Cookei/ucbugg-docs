@@ -4,9 +4,21 @@
 html[saved-theme="dark"] {
   body {
     color-scheme: dark;
-
     background-image: url("/static/bg-dark.png");
+
+    ::selection {
+      background-color: rgb(150, 69, 49);
+    }
+
+    .example-component[data-isLab="false"] {
+      background-color: var(--dark);
+    }
+
     @media all and ($desktop) {
+      .search-container.active {
+        background-color: rgba(25, 25, 29, 0.575);
+      }
+
       #quartz-body {
         background: linear-gradient(
           to right,
@@ -17,8 +29,8 @@ html[saved-theme="dark"] {
         );
       }
 
-      h2.page-title::before {
-        background-image: url("/static/icon-dark.png");
+      h2.page-title a::before {
+        background-image: url("/static/logo-dark.png");
       }
     }
     .callout {

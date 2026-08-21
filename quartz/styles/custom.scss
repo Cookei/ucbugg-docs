@@ -8,12 +8,47 @@
 
 :root {
   color-scheme: light dark;
+  --default-cursor: url("/static/cursors/default.png") 8 5, default;
+  --pointer-cursor: url("/static/cursors/pointer.png") 12 5, pointer;
+  --grab-cursor: url("/static/cursors/grab.png") 16 16, grab;
+  --grabbing-cursor: url("/static/cursors/grabbing.png") 16 16, grabbing;
+  --zoom-in-cursor: url("/static/cursors/zoom-in.png") 10 12, zoom-in;
+  --zoom-out-cursor: url("/static/cursors/zoom-out.png") 10 12, zoom-out;
 }
 
 html {
   /* Ensure rem units are based on a 16px root font size */
   font-size: 16px;
   font-family: var(--bodyFont);
+  cursor: var(--default-cursor);
+
+  a,
+  button,
+  .note-properties .note-properties-header {
+    cursor: var(--pointer-cursor) !important;
+  }
+  // p,
+  // span,
+  // a,
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // li,
+  // label,
+  // blockquote,
+  // td,
+  // th {
+  //   cursor:
+  //     url("/static/cursors/text.png") 16 16,
+  //     text;
+  // }
+}
+
+body.lightbox-open {
+  overflow: unset !important;
 }
 
 .explorer .explorer-toggle {
@@ -29,41 +64,46 @@ html {
 }
 
 @media all and ($desktop) {
-  .left.sidebar::after {
-    content: "";
+  .search-container.active {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .sidebar-decoration {
     position: absolute;
     width: calc(100% - 32px * 2);
     bottom: 0;
-    height: 350px;
-    background-image: url("/static/melchan_uwoah.webp");
-    background-size: contain;
-    background-position-x: center;
-    background-repeat: no-repeat;
-    animation: bobUpAndDown 5s ease-in-out infinite;
     filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.15));
+
+    // animation: bobUpAndDown 5s ease-in-out infinite;
+    // transform: perspective(75em);
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    // @keyframes bobUpAndDown {
+    //   0% {
+    //     transform: rotateY(18deg) translateY(0);
+    //   }
+    //   50% {
+    //     transform: rotateY(5deg) translateY(-16px);
+    //   }
+    //   100% {
+    //     transform: rotateY(18deg) translateY(0);
+    //   }
+    // }
   }
 
-  .left.sidebar:hover::after {
-    animation-duration: 0.3s;
+  .sidebar-decoration:hover {
+    cursor: var(--pointer-cursor);
   }
+}
 
-  @keyframes bobUpAndDown {
-    0% {
-      transform: perspective(75em) rotateY(18deg) translateY(0);
-    }
-    50% {
-      transform: perspective(75em) rotateY(5deg) translateY(-16px);
-    }
-    100% {
-      transform: perspective(75em) rotateY(18deg) translateY(0);
-    }
-  }
-
-  h2.page-title {
+@media all and ($desktop) {
+  h2.page-title a {
     position: relative;
     padding-left: 3.5rem;
   }
-  h2.page-title::before {
+  h2.page-title a::before {
     content: ""; /* Required for the pseudo-element to render */
     position: absolute;
     left: 0;
@@ -73,6 +113,17 @@ html {
     height: 3.5rem; /* Set your desired image height */
     background-size: contain; /* Ensures the image fits inside the width/height */
     background-repeat: no-repeat;
+  }
+}
+
+.staff-page {
+  .table-container table {
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -97,11 +148,11 @@ code {
 }
 
 blockquote.is-collapsed {
-  cursor: pointer;
+  cursor: var(--pointer-cursor);
 }
 
 blockquote.is-collapsible .callout-title {
-  cursor: pointer;
+  cursor: var(--pointer-cursor);
 }
 
 kbd {
