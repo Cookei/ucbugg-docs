@@ -27,6 +27,6 @@ cssclasses:
 | ![[Rishab Melkote.jpeg\|100]]  | Rishab Melkote   | he/him   |             |
 | ![[Emma Yang.jpg\|100]]        | Emma Yang        | she/her  |             |
 | ![[Koichiro Wakita.jpeg\|100]] | Koichiro Wakita  | he/him   |             |
-|                                | Nada             |          |             |
+| ![[Nada Hameed.jpg\|100]]      | Nada             | she/her  |             |
 
 # Past Staff

@@ -312,6 +312,21 @@ plugins:
     layout:
       position: right
       priority: 10
+  - source: https://github.com/xoconoch/bg-varieties
+    enabled: true
+    options:
+      type: vector
+      zIndex: -2
+      opacity: 0.6
+      speedMultiplier: 0.5
+      density: 100
+      interactive: true
+      theme: auto
+      palette: sunset
+    order: 50
+    layout:
+      position: afterBody
+      priority: 10
 layout:
   groups:
     toolbar:

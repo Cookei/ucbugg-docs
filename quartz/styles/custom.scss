@@ -16,6 +16,12 @@
   --zoom-out-cursor: url("/static/cursors/zoom-out.png") 10 12, zoom-out;
 }
 
+html[reader-mode="on"] {
+  .bg-varieties-container {
+    opacity: 0;
+  }
+}
+
 html {
   /* Ensure rem units are based on a 16px root font size */
   font-size: 16px;
@@ -61,6 +67,11 @@ body.lightbox-open {
 
 .explorer .explorer-content {
   margin-left: 1rem;
+}
+
+.bg-varieties-container {
+  transition: opacity 0.5s ease;
+  mask-image: linear-gradient(to right, #000, transparent 30%, transparent 70%, #000);
 }
 
 @media all and ($desktop) {

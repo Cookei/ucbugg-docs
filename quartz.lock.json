@@ -31,6 +31,12 @@
       "commit": "db114afd1005669b7440b8770603df767147e200",
       "installedAt": "2026-08-17T23:27:47.806Z"
     },
+    "bg-varieties": {
+      "source": "https://github.com/xoconoch/bg-varieties",
+      "resolved": "https://github.com/xoconoch/bg-varieties",
+      "commit": "cdb25f72eb845695e5dfb257018641dad07e50a9",
+      "installedAt": "2026-08-21T10:02:02.021Z"
+    },
     "breadcrumbs": {
       "source": "github:quartz-community/breadcrumbs",
       "resolved": "https://github.com/quartz-community/breadcrumbs.git",
