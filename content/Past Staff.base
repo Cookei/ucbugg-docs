@@ -1,7 +1,10 @@
 views:
-  - type: cards
+  - type: table
     name: Cards
     filters:
       and:
         - file.folder == "assets/staff-images/past-staff"
+    sort:
+      - property: file.name
+        direction: ASC
     image: file.file

@@ -2,6 +2,7 @@
 tags:
   - homework
 author:
+draft: true
 ---
 
 # Individual Work

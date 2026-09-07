@@ -214,8 +214,8 @@
     "quartz-navbar": {
       "source": "github:satche/quartz-navbar",
       "resolved": "https://github.com/satche/quartz-navbar.git",
-      "commit": "56710a3bf855ba114a7f6ac77453c997acbbb528",
-      "installedAt": "2026-08-20T21:43:04.684Z"
+      "commit": "b62e37616a1cc08451ff2f4e6f07d39963f61140",
+      "installedAt": "2026-09-07T07:41:41.513Z"
     },
     "quartz-themes": {
       "source": {

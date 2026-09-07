@@ -247,7 +247,8 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  - source: github:quartz-community/bases-page
+  # - source: github:quartz-community/bases-page
+  - source: C:\Users\HanLi\Desktop\Repo\bases-page
     enabled: true
     options: {}
     order: 50
@@ -259,7 +260,7 @@ plugins:
         - description
         - author
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5
@@ -286,11 +287,15 @@ plugins:
     options: {}
     order: 70
   - source: github:satche/quartz-navbar
-    enabled: false
+    enabled: true
     options:
       links:
         - label: Home
           href: /
+        - label: Policies
+          href: /Policies
+        - label: Staff
+          href: /Staff
         - label: About
           href: /about
     order: 50
@@ -317,7 +322,7 @@ plugins:
     options:
       type: vector
       zIndex: -2
-      opacity: 0.6
+      opacity: 0.7
       speedMultiplier: 0.5
       density: 100
       interactive: true

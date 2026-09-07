@@ -5,10 +5,7 @@ import { componentRegistry } from "./quartz/components/registry"
 componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   filterFn: (node) => {
     return (
-      node.slugSegment !== "tags" &&
-      node.slugSegment !== "labs" &&
-      node.slugSegment !== "attachments" &&
-      node.slugSegment !== "homework"
+      node.slugSegment == "about" || node.slugSegment == "policies" || node.slugSegment == "staff"
     )
   },
   sortFn: (a, b) => {

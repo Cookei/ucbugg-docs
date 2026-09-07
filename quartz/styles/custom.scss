@@ -53,6 +53,14 @@ html {
   // }
 }
 
+#quartz-body:has(header) {
+  padding-top: 0 !important;
+}
+
+header {
+  justify-content: right;
+}
+
 body.lightbox-open {
   overflow: unset !important;
 }
@@ -131,7 +139,7 @@ body.lightbox-open {
   .table-container table {
     img {
       width: 100px;
-      height: 100px;
+      aspect-ratio: 1;
       border-radius: 50%;
       object-fit: cover;
     }
