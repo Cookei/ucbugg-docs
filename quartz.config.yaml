@@ -294,6 +294,8 @@ plugins:
           href: /
         - label: Policies
           href: /Policies
+        - label: Gradescope
+          href: https://www.gradescope.com/courses/1387955
         - label: Staff
           href: /Staff
         - label: About
