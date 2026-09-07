@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: ucbugg.com/docs
+  baseUrl: ucbugg.com
   ignorePatterns:
     - private
     - templates
