@@ -247,7 +247,6 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  # - source: github:quartz-community/bases-page
   - source: C:\Users\HanLi\Desktop\Repo\bases-page
     enabled: true
     options: {}
@@ -303,22 +302,6 @@ plugins:
     order: 50
     layout:
       position: header
-  - source: https://github.com/Cookei/SidebarDecoration
-    enabled: true
-    options:
-      lightSrc: /static/melchan_uwoah.webp
-      darkSrc: /static/melchan_uwoah_dark.png
-    order: 50
-    layout:
-      position: left
-      priority: 50
-  - source: https://github.com/Cookei/AutoCardLink
-    enabled: true
-    options: {}
-    order: 50
-    layout:
-      position: right
-      priority: 10
   - source: https://github.com/xoconoch/bg-varieties
     enabled: true
     options:
@@ -334,6 +317,22 @@ plugins:
     layout:
       position: afterBody
       priority: 10
+  - source: https://github.com/Cookei/AutoCardLink
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: right
+      priority: 10
+  - source: github:Cookei/SidebarDecoration
+    enabled: true
+    options:
+      lightSrc: /static/melchan_uwoah.webp
+      darkSrc: /static/melchan_uwoah_dark.png
+    order: 50
+    layout:
+      position: left
+      priority: 50
 layout:
   groups:
     toolbar:

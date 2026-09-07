@@ -1,6 +1,18 @@
 {
   "version": "1.0.0",
   "plugins": {
+    "AutoCardLink": {
+      "source": "https://github.com/Cookei/AutoCardLink",
+      "resolved": "https://github.com/Cookei/AutoCardLink",
+      "commit": "a57d5123b6747873cd3eb0b52a2b4248dc4cfe17",
+      "installedAt": "2026-09-07T08:58:56.906Z"
+    },
+    "SidebarDecoration": {
+      "source": "github:Cookei/SidebarDecoration",
+      "resolved": "https://github.com/Cookei/SidebarDecoration.git",
+      "commit": "d6aa28330147ffb5595d12ed5456d02cc4dd361a",
+      "installedAt": "2026-09-07T09:01:35.545Z"
+    },
     "alias-redirects": {
       "source": "github:quartz-community/alias-redirects",
       "resolved": "https://github.com/quartz-community/alias-redirects.git",
@@ -12,12 +24,6 @@
       "resolved": "https://github.com/quartz-community/article-title.git",
       "commit": "87499a64e8b9af69bfce23dd5985a33176b14b5e",
       "installedAt": "2026-08-17T23:27:47.356Z"
-    },
-    "auto-card-link-v5": {
-      "source": "C:\\Users\\HanLi\\Desktop\\Repo\\auto-card-link-v5",
-      "resolved": "C:\\Users\\HanLi\\Desktop\\Repo\\auto-card-link-v5",
-      "commit": "local",
-      "installedAt": "2026-08-21T07:57:35.281Z"
     },
     "backlinks": {
       "source": "github:quartz-community/backlinks",
@@ -257,12 +263,6 @@
       "resolved": "https://github.com/quartz-community/search.git",
       "commit": "1d9ba593230b997ee4cf0cc3c1ed4a30b571cee2",
       "installedAt": "2026-08-17T23:27:48.670Z"
-    },
-    "sidebar-decoration": {
-      "source": "D:\\Documents\\Github\\sidebar-decoration",
-      "resolved": "D:\\Documents\\Github\\sidebar-decoration",
-      "commit": "local",
-      "installedAt": "2026-08-20T23:54:45.114Z"
     },
     "spacer": {
       "source": "github:quartz-community/spacer",
