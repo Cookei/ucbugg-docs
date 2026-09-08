@@ -52,13 +52,19 @@ Watch this video on shot progression from Pixar and take notes on what you learn
 > [!todo] Todo: Storyboard Slides
 > - Please submit a .ppt or a .pdf and rename it accordingly. section is either 003 or 303  
 > section_firstname_lastname_hw1.ppt
+> 
+> Submit on the Gradescope Hw1 assignment
 
 > [!todo] Todo: Google Drive for Desktop Screenshot
 > Please submit a `.png` or a `.jpg` and rename it accordingly. `section` is either 003 or 303 `section_firstname_lastname_hw1.png`  
 > Submit a screenshot of your downloaded Google Drive for Desktop (preferably a screenshot of the application open, NOT the Google Drive website)
+>
+> Submit on the Gradescope Hw1 assignment
 
 > [!todo] Todo: Shot Progression Video
 > Write at least 2 sentences about something you learned or found most interesting from the video and respond to at least 2 other students
+>
+> Submit on the `#discussion` channel in the `Pixar Hoppers Shot Progression` thread on Discord
 
 # Rubric
 

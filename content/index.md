@@ -9,7 +9,7 @@ This site is intended to host all of the UCBUGG course content, as well as a liv
 
 # UCBUGG Fall 2026
 
-**Lecture**: M/W, 7:00-9:00 PM, [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/), [YouTube](https://www.youtube.com/@UCBUGG)
+**Lecture**: M/W, 7:00-9:00 PM, [Gateway B1022](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/), [YouTube](https://www.youtube.com/@UCBUGG)
 
 | Week | Topic                         | Slides | Recording | Homework                                                                           |
 | ---- | ----------------------------- | ------ | --------- | ---------------------------------------------------------------------------------- |
@@ -22,11 +22,10 @@ This site is intended to host all of the UCBUGG course content, as well as a liv
 | 7    | Shading                       |        |           | ~~[[Hw5 - Shading and Texturing]]~~<br>~~[[Weekly Progress\|Weekly Progress #3]]~~ |
 | 8    | Rigging 1                     |        |           |                                                                                    |
 | 9    | Rigging 2                     |        |           |                                                                                    |
-| 10   | Thanksgiving Break            |        |           |                                                                                    |
-| 11   | Animation 1                   |        |           |                                                                                    |
-| 12   | Animation 2                   |        |           |                                                                                    |
-| 13   | Lighting                      |        |           |                                                                                    |
-| 14   | Rendering                     |        |           |                                                                                    |
+| 10   | Animation 1                   |        |           |                                                                                    |
+| 11   | Animation 2                   |        |           |                                                                                    |
+| 12   | Lighting                      |        |           |                                                                                    |
+| 13   | Rendering                     |        |           |                                                                                    |
+| 14   | Thanksgiving Break            |        |           |                                                                                    |
 | 15   | Compositing                   |        |           |                                                                                    |
-| 16   | Render Week                   |        |           |                                                                                    |
-| 17   | Showcase                      |        |           |                                                                                    |
+| 16   | Render Week / Showcase        |        |           |                                                                                    |

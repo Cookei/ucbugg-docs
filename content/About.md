@@ -2,7 +2,7 @@
 tags:
 author:
 ---
-![UCBUGG Spring 2026 Demo Reel](https://www.youtube.com/watch?v=JWWfeOvPOqo)
+![UCBUGG Fall 2026 Demo Reel](https://youtu.be/mXnLQJZ9MAo)
 
 ---
 

@@ -10,9 +10,9 @@ version: Fall 2026
 - **Course Website**: [ucbugg.com](https://www.ucbugg.com/)
 - **Class Time and Location**:
 	- **Section 003**:
-		- Monday | 7:00pm - 9:00pm | [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
+		- Monday | 7:00pm - 9:00pm | [Gateway B1022](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
 	- **Section 303**:
-		- Wednesday | 7:00-pm - 9:00pm | [Gateway B1015](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
+		- Wednesday | 7:00-pm - 9:00pm | [Gateway B1022](https://www.berkeley.edu/map/barbara-and-gerson-bakar-gateway/)
 - **Unit Information**: CS 198-003, CS 198-303, 3 units P/NP
 - **Prerequisites**: None
 - **Time Conflicts**: Not Allowed
@@ -42,7 +42,7 @@ All course schedule and communications will be on Discord. A Discord server will
 
 # Lecture
 
-We will have a 2 hour live lecture on Mondays and Wednesdays from 7:00pm - 9:00pm in Gateway B1015. The last 30 minutes of the lecture will be dedicated to group time to work with your group members on your final short. **Lecture attendance is mandatory**
+We will have a 2 hour live lecture on Mondays and Wednesdays from 7:00pm - 9:00pm in Gateway B1022. The last 30 minutes of the lecture will be dedicated to group time to work with your group members on your final short. **Lecture attendance is mandatory**
 
 Lectures may or not be recorded depending on the facilitator's discretion. We try our best to record lectures, but there is no guarantee. Lecture slides will be publicly posted
 
@@ -66,7 +66,7 @@ Homework rubrics are listed on each relevant homework assignment. Homework is **
 
 ## Group Work
 
-In addition to your weekly homework, you are expected to allocate adequate time to complete your group work. Beginning Week 3, you will be assigned a group for the rest of the semester based on a shared interest for the short idea you want. You will work towards completing the necessary steps required to make your animated short throughout the semester
+In addition to your weekly homework, you are expected to allocate adequate time to complete your group work. Beginning Week 4, you will be assigned a group for the rest of the semester based on a shared interest for the short idea you want. You will work towards completing the necessary steps required to make your animated short throughout the semester
 
 We have listed guidelines on what parts of the pipeline your group should work on at every given week. Your facilitators will work with you closely to ensure the group work recommended fits your short idea. The group work listed is not mandatory to complete and is flexible. However, it is important that you stay on track. Completing a 3D animated short requires **a lot** of work and it is incredibly easy to fall behind.
 
@@ -81,7 +81,7 @@ For examples on past student slide decks, you can refer to them [here](https://d
 
 ## Midterm
 
-There will be a midterm on the week of Animation 2. This midterm will consist of a more in depth progress check-in for your entire group for the progress of your short. Additionally, facilitator and class-wide critique will occur for every group's progress.
+There will be a midterm assigned on the start of Animation 1 and will be due during the lecture of Animation 2. This midterm will consist of a more in depth progress check-in for your entire group for the progress of your short. Additionally, facilitator and class-wide critique will occur for every group's progress.
 
 In addition to the in-class critique session, you will be required to submit 2 critiques in the course Discord giving constructive critique to your fellow students. More details surrounding the midterm will be announced closer to the midterm date.
 
@@ -89,7 +89,7 @@ There will also still be lecture after the in-class midterm critique.
 
 ## Final Project
 
-You will be working on your final project alongside your assigned group (Week 3) for the duration of the semester. Your final project is a completed animated short film. You can view our [youtube channel](https://www.youtube.com/@UCBUGG) for examples of past student shorts.
+You will be working on your final project alongside your assigned group (Week 4) for the duration of the semester. Your final project is a completed animated short film. You can view our [youtube channel](https://www.youtube.com/@UCBUGG) for examples of past student shorts.
 
 This final project will be presented at our end of semester showcase. Details about showcase will be released closer to the date. This final project is graded on completion, effort, and a peer evaluation.
 
@@ -108,6 +108,9 @@ For all individual homework assignments, there will be an extension request form
 If we notice that you are abusing the extension policy, we will deny future extension requests.
 
 Any homework assignment turned in late can only be graded up to a maximum of 50% credit.
+
+> [!info]
+> All homework is submitted through Gradescope unless otherwise stated
 
 ## Grading Breakdown
 
