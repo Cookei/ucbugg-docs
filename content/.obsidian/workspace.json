@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "2aebb92f35a447f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c8a712aafd97d00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36e5599ccb457785",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homework/Hw2 - Production Management.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Hw2 - Production Management"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c60a4c811c2b92fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dc202da07d61afd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3de9c59192d8027",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3c59cbbd494dd024",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1a0ae183522307ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5b5868e32a1409f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "53f2475aec1c1b96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76bd07a2bbafd22d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Homework/Hw2 - Production Management.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "219e6ff07b2039f5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Labs/Modeling 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a2967455ad9d6d5e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f7d2b6730de9ec0b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "eb51bb39dd85f235",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Labs/Modeling 1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "callout-manager:Insert Callout": false,
+      "templater-obsidian:Templater": false,
+      "file-cleaner-redux:Clean files": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "36e5599ccb457785",
+  "lastOpenFiles": [
+    "Labs/Production Management.md",
+    "index.md",
+    "Homework/Hw2 - Production Management.md",
+    "Homework/Hw3 - Modeling 1.md",
+    "Homework/Hw1 - Storyboarding and Pitching.md",
+    "Labs/attachments/Production Management/mac_drive_for_desktop.png",
+    "Labs/attachments/Production Management/drive_for_desktop.png",
+    "Labs/attachments/Production Management/Pasted image 20251103194954.png",
+    "Labs/attachments/Production Management/shared_with_me.png",
+    "Labs/attachments/Production Management/windows_drive_for_desktop.png",
+    "Labs/attachments/Production Management/web_group_folder_example.png",
+    "Labs/attachments/Production Management/set_project_example.png",
+    "Labs/Production Management",
+    "Labs/attachments/Production Management/ucbugg_folder_example.png",
+    "Labs/attachments/Production Management/Moving_Group_Folder_To_UCBUGG_Folder.mp4",
+    "Labs/attachments/Production Management/Creating_PM_Tools.mp4",
+    "Labs/attachments/Production Management/Creating_HW_Directory.mp4",
+    "Labs/attachments/Production Management/Creating_Group_Directory.mp4",
+    "Labs/attachments/Production Management/Adding_Group_Folder_To_Drive.mp4",
+    "Labs/attachments/Production Management/Setting_Projects.mp4",
+    "Labs/attachments/Production Management/PM_Shortcut_Workaround.mp4",
+    "Labs/Modeling 2.md",
+    "Labs/attachments/Production Management/THUMBNAIL.4f90d54ba47469846d60.png",
+    "Labs/attachments/Production Management/Thumbnail.png",
+    "Untitled.md",
+    "Labs/Introduction to Pre Production.md",
+    "Course Notes/Color Script.md",
+    "Course Notes/Mood Board.md",
+    "Labs/Modeling 1.md"
+  ]
+}
