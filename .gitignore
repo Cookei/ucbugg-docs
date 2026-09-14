@@ -4,7 +4,17 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
+
+# Obsidian workspace state — ignore this
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian cache
+.obsidian/cache/
+
+# Optional: Obsidian sync metadata
+.obsidian/.sync/
+
 .quartz-cache
 private/
 .replit
