@@ -153,10 +153,10 @@ This section will focus on making a shortcut to this folder from your `UCBUGG_fa
 > > [!note]- Everyone (except Project Manager)
 > > ![[Moving_Group_Folder_To_UCBUGG_Folder.mp4]]
 > > 
-> > 6. Open <samp>My Drive</samp> on File Explorer so that you can see the ***group*** folder.
-> > 7. Open the `UCBUGG_fall_2026` folder.
-> > 8. Drag the ***group*** folder into the `UCBUGG_fall_2026` folder to make a copy of the shortcut.
-> > 9. Now your `UCBUGG_fall_2026` folder should have one folder dedicated to `homework` and one folder dedicated to your group’s short.
+> > 1. Open <samp>My Drive</samp> on File Explorer so that you can see the ***group*** folder.
+> > 2. Open the `UCBUGG_fall_2026` folder.
+> > 3. Drag the ***group*** folder into the `UCBUGG_fall_2026` folder to make a copy of the shortcut.
+> > 4. Now your `UCBUGG_fall_2026` folder should have one folder dedicated to `homework` and one folder dedicated to your group’s short.
 > 
 > > [!note]- Project Manager Only
 > > ![[PM_Shortcut_Workaround.mp4]]
@@ -166,12 +166,12 @@ This section will focus on making a shortcut to this folder from your `UCBUGG_fa
 > > > [!info] Explanation
 > > > For the technical explanation, the ***group*** folder in your Drive is NOT a shortcut (you can see the Type is listed as `File folder` instead of `Shortcut`) compared to the rest of your group, which made a shortcut from <samp>Shared with me</samp>. As a result, we can’t copy it directly to the `UCBUGG_fall_2026` folder. Instead, we will make a shortcut temporarily and copy it over.
 > > 
-> > 10. Open <samp>My Drive</samp> on File Explorer so that you can see the ***group*** folder.
-> > 11. Right-click on the ***group*** folder and click on <samp>Show more options</samp> → <samp>Create shortcut</samp>. This should create a new shortcut to the ***group*** folder.
-> > 12. Open the `UCBUGG_fall_2026` folder.
-> > 13. Drag the new shortcut into the `UCBUGG_fall_2026` folder to make a copy of the shortcut.
-> > 14. Delete the shortcut inside of <samp>My Drive</samp> and remove the ` - Shortcut` at the end of the copied shortcut’s name.
-> > 15. Now your `UCBUGG_fall_2026` folder should have one folder dedicated to `homework` and one folder dedicated to your group’s short.
+> > 1. Open <samp>My Drive</samp> on File Explorer so that you can see the ***group*** folder.
+> > 2. Right-click on the ***group*** folder and click on <samp>Show more options</samp> → <samp>Create shortcut</samp> (on MAC you can click on <samp>Create alias instead</samp>). This should create a new shortcut to the ***group*** folder.
+> > 3. Open the `UCBUGG_fall_2026` folder.
+> > 4. Drag the new shortcut into the `UCBUGG_fall_2026` folder to make a copy of the shortcut.
+> > 5. Delete the shortcut inside of <samp>My Drive</samp> and remove the ` - Shortcut` at the end of the copied shortcut’s name.
+> > 6. Now your `UCBUGG_fall_2026` folder should have one folder dedicated to `homework` and one folder dedicated to your group’s short.
 
 # Setting Your Project
 
