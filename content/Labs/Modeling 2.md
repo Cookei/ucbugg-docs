@@ -2,6 +2,6 @@
 tags:
   - lab
   - modeling
-image: "[[placeholder-image.png]]"
+image: "[[THUMBNAIL-modeling2.jpg]]"
 author:
 ---

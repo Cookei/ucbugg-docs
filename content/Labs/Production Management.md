@@ -1,7 +1,7 @@
 ---
 tags:
   - lab
-image: "[[Thumbnail.png]]"
+image: "[[Thumbnail-Production-Management.png]]"
 author: Travis Le
 ---
 

@@ -247,7 +247,7 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-  - source: C:\Users\HanLi\Desktop\Repo\bases-page
+  - source: github:quartz-community/bases-page
     enabled: true
     options: {}
     order: 50
