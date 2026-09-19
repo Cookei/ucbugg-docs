@@ -2,7 +2,7 @@
 title: UCBUGG
 cssclasses:
 ---
-This site is intended to host all of the UCBUGG course content, as well as a living textbook for graphics content
+This site is intended to host all of the UCBUGG course content, as well as a living textbook for graphics content.
 
 > [!attention]
 > This site is still under construction and may be subject to change. If you have any issues navigating the site, please contact the head facilitator, Han Li
@@ -16,7 +16,7 @@ This site is intended to host all of the UCBUGG course content, as well as a liv
 | 1    | N/A                           | N/A                                                                                                            | N/A                                       | N/A                                                                                |
 | 2    | Intro to Maya / Infosession   |                                                                                                                |                                           |                                                                                    |
 | 3    | Pre-Production: Story and Art | [Slides](https://docs.google.com/presentation/d/1bAG61I-GgsoSuq8cJj462wZs2uAlLPvetaY1IvxYi6o/edit?usp=sharing) | [Recording](https://youtu.be/r-B50ZwRxL4) | [[Hw1 - Storyboarding and Pitching]]                                               |
-| 4    | Production Management         |                                                                                                                |                                           | [[Hw2 - Production Management]]                                                    |
+| 4    | Production Management         | [Slides](https://docs.google.com/presentation/d/1J49faJd8zJSdzqDW4m8rE9k269ywNk6v8B_ghNjHdAY/edit?usp=sharing) |                                           | [[Hw2 - Production Management]]                                                    |
 | 5    | Modeling 1                    |                                                                                                                |                                           | ~~[[Hw3 - Modeling 1]]~~<br>~~[[Weekly Progress\|Weekly Progress #1]]~~            |
 | 6    | Modeling 2                    |                                                                                                                |                                           | ~~[[Hw4 - Modeling 2]]~~<br>~~[[Weekly Progress\|Weekly Progress #2]]~~            |
 | 7    | Shading                       |                                                                                                                |                                           | ~~[[Hw5 - Shading and Texturing]]~~<br>~~[[Weekly Progress\|Weekly Progress #3]]~~ |

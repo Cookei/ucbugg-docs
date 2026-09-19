@@ -2,7 +2,7 @@
 tags:
   - lab
   - pre-production
-image: "[[THUMBNAIL.19495f988c09ace94754.png]]"
+image: "[[THUMBNAIL-Preproduction.png]]"
 author:
 ---
 
