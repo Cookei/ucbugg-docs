@@ -6,14 +6,14 @@ prof
 tsconfig.tsbuildinfo
 
 # Obsidian workspace state — ignore this
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
 
 # Obsidian cache
-.obsidian/cache/
+content/.obsidian/cache/
 
 # Optional: Obsidian sync metadata
-.obsidian/.sync/
+content/.obsidian/.sync/
 
 .quartz-cache
 private/
