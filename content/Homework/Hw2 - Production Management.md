@@ -20,6 +20,19 @@ Complete the following [[Production Management]] lab
 > 2. Your group’s Google Drive folder open on your web browser (Google Chrome, Safari, Firefox, etc.)
 > 3. Your <samp>Current Project</samp> dropdown in Autodesk Maya, where you set the project. It should show both the `homework` and group’s directories in it.
 
+# Rubric
+
+| Item                               | Points |
+| ---------------------------------- | ------ |
+| Group Director Name                | 1      |
+| Project Manager Name               | 1      |
+| Rest of Group’s Names              | 1      |
+| File Sharing Service               | 1      |
+| UCBUGG Folder (Desktop)            | 2      |
+| Group Project Folder (Web Browser) | 2      |
+| Set Project (Maya)                 | 2      |
+| **Total**                          | **10** |
+
 # Group Work
 
 **Project Managers:** distribute the following work among members of your group, and make sure each item is stored in your group's shared folder so all group members can access it.

@@ -11,7 +11,7 @@ cssclasses:
 
 # Introduction
 
-This lab explores the basics of polygon modeling in Maya by making a simple toilet prop. The lab gives detailed step-by-step instructions, but feel free to follow them as closely or loosely as you want. However, pay close attention to all of the different tools that are used, as the [[Modeling 2]] lab will build off of them.
+This lab explores the basics of polygon modeling in Maya by making a simple toilet prop. The lab gives detailed step-by-step instructions, but feel free to follow them as closely or loosely as you want. However, pay close attention to all of the different tools that are used, as the Modeling 2 lab will build off of them.
 
 # Modeling the Bowl
 

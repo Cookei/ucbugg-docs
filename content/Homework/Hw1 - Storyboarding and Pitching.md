@@ -73,4 +73,4 @@ Watch this video on shot progression from Pixar and take notes on what you learn
 | Storyboard Slides                   | 6      |
 | Google Drive for Desktop Screenshot | 2      |
 | Shot Progression Video              | 2      |
-| Total                               | 10     |
+| **Total**                               | **10**     |
