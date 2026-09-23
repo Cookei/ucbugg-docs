@@ -1,6 +1,6 @@
 ---
 tags:
   - lab
-image: "[[placeholder-image.png]]"
+image: "[[placeholder.png]]"
 author:
 ---

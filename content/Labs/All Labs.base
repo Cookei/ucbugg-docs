@@ -1,33 +1,84 @@
+filters:
+  and:
+    - file.hasTag("lab")
+    - file.folder != "templates"
 views:
   - type: cards
     name: All
-    filters:
-      and:
-        - file.hasTag("lab")
-        - file.folder != "templates"
+    groupBy:
+      property: file.tags
+      direction: ASC
     order:
       - file.name
+    sort: []
     image: note.image
   - type: cards
     name: Pre-Production
     filters:
       and:
-        - file.hasTag("lab")
         - file.hasTag("pre-production")
+    groupBy:
+      property: file.tags
+      direction: ASC
     order:
       - file.name
-    sort:
-      - property: file.name
-        direction: ASC
+    sort: []
     image: note.image
     imageAspectRatio: 1
   - type: cards
     name: Modeling
     filters:
       and:
-        - file.hasTag("lab")
         - file.hasTag("modeling")
-    sort:
-      - property: file.name
-        direction: ASC
+    groupBy:
+      property: file.tags
+      direction: ASC
+    order:
+      - file.name
+    sort: []
+    image: note.image
+  - type: cards
+    name: Rigging
+    filters:
+      and:
+        - file.hasTag("rigging")
+    groupBy:
+      property: file.tags
+      direction: ASC
+    image: note.image
+  - type: cards
+    name: Shading
+    filters:
+      and:
+        - file.hasTag("shading")
+    groupBy:
+      property: file.tags
+      direction: ASC
+    image: note.image
+  - type: cards
+    name: Animation
+    filters:
+      and:
+        - file.hasTag("animation")
+    groupBy:
+      property: file.tags
+      direction: ASC
+    image: note.image
+  - type: cards
+    name: Lighting
+    filters:
+      and:
+        - file.hasTag("lighting")
+    groupBy:
+      property: file.tags
+      direction: ASC
+    image: note.image
+  - type: cards
+    name: Effects
+    filters:
+      and:
+        - file.hasTag("effects")
+    groupBy:
+      property: file.tags
+      direction: ASC
     image: note.image
