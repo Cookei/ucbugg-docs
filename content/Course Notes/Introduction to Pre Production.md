@@ -5,7 +5,6 @@ tags:
 image: "[[THUMBNAIL_introtopreprod.png]]"
 author:
 ---
-
 # Storyboarding
 
 As stated in lecture, the way you can break down what storyboarding is is simply thinking of it as staging and acting. It is problem-solving in the way that you should be thinking "What is my story, and how can that be best communicated visually?"

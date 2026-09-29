@@ -35,4 +35,4 @@ draft: false
 ## Deliverables
 
 > [!check] SUBMIT: Team Progress Report
-> Complete the **Weekly Group Progress #2** assignment on Gradescope as well as the relevant writeup. This should include a short description of what you did for the week, what your group’s overall progress is, as well as a screenshot of your slide deck of images detailing your work.
+> Complete the **Weekly Group Progress \#2** assignment on Gradescope as well as the relevant writeup. This should include a short description of what you did for the week, what your group’s overall progress is, as well as a screenshot of your slide deck of images detailing your work.

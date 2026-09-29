@@ -68,7 +68,7 @@ This week we'll be modeling a classic UCBUGG fox using different techniques. It'
 Download this side view of a fox to use as a reference.
 When modeling your own assets you'll be using your character sheets as a reference.
 
-**Fox Image:** [[fox.jpg]]
+**Fox Image:** [[original_fox.jpg]]
 
 ![](original_fox.jpg)
 
@@ -110,7 +110,7 @@ Next, go to **Shading → X-Ray**. This makes your mesh half transparent so that
 
 The key to box modeling is to start out very blocky and slowly adding more detail. Don't be afraid to have an abstract model for the majority of the time. Always have a reason for every edge loop you add. Avoid adding edge loops unless you're going to move, scale, or rotate it.
 
-# STEP 1: TORSO
+## STEP 1: TORSO
 
 Start off with fitting your cube into the base of the torso. Notice that my edges end at the armpit and thigh of the legs. As you're modeling, you want to keep in mind where you place edges along your model. A general good practice to keep good topology or "edge flow" is to place edges near the joints of the fox/thing you are modeling (arms, legs, head, etc.). Keeping good edge flow and placing your edges carefully will become more important when we get into rigging so do your best to keep things clean and organized as you model!
 
@@ -171,7 +171,7 @@ Once you're satisfied with the torso, let's **Delete History**. Then save this `
 For good practice, let's click **Save As** and create a `foxLatest.ma` file, then a `fox2.ma` file.
 We'll be working in `fox2.ma` from now on and have a backup called `fox1.ma` and your group members would be using `foxLatest.ma`.
 
-# STEP 2: FRONT LEG (Extrusion method)
+## STEP 2: FRONT LEG (Extrusion method)
 
 There are two ways to model limbs in general. You can either extrude off of the main mesh or create a separate object that you later "stitch" vertices to. It's up to you which method you want to use as I'll be showing you both methods with the legs.
 Also, don't worry about modeling all four legs! We'll be making one front leg and one back leg, then copy it over to the other side.
@@ -198,7 +198,7 @@ Here's a screenshot of my front leg smoothed out. I've lost a lot of the sharp b
 
 ![](smooth.jpg)
 
-# STEP 3: BACK LEG (Stitching Method)
+## STEP 3: BACK LEG (Stitching Method)
 
 The stitching method works by merging vertices together. This means, the number of vertices on the area you're going to stitch onto MUST EQUAL the number of vertices of the area that is being stitched into the main mesh.
 
@@ -279,7 +279,7 @@ Play around with scaling the torso and legs of the model until you're happy.
 
 You can mirror geometry as often as you like! Use it to your advantage.
 
-# STEP 4: HEAD & TAIL
+## STEP 4: HEAD & TAIL
 
 In your `fox2.ma` scene, **Delete History**, **Center Pivot** (if its not centered) and **Freeze Transformations**. Remember the shortcuts for these options as well as these are things you want to do in your files on a somewhat regular basis.
 
