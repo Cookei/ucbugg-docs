@@ -1,8 +1,8 @@
 ---
 tags:
-  - lab
+  - note
   - pre-production
-image: "[[THUMBNAIL_IntroPreProd.png]]"
+image: "[[THUMBNAIL_introtopreprod.png]]"
 author:
 ---
 
@@ -44,13 +44,13 @@ Think about how acting is unique to your own character. How would they react if 
 
 For example, if someone is throwing a ball, you would need to have the **initial pose** (the wind-up), the **mid-pose** (how the character is throwing the ball), and the **follow-through pose** (after the ball leaves the character's hand)
 
-![[key_poses.png]]
+![[poses.png]]
 
 ### Facial Expression
 
 For example, if a character is about to cry, you may have one drawing where the character is almost neutral, another one where the character's face scrunches up, another where eyes open and tear falls.
 
-![[facial_expressions.png]]
+![[expressions.png]]
 
 Staging and acting go hand-in-hand. You wouldn't necessarily have a close up shot if your character is in the middle of some fight sequence, and at the same time, you wouldn't have an extreme long shot if you want to focus on the character's eyes twitching.
 
@@ -114,7 +114,7 @@ As you are thinking about your protagonist, the main question you want to have i
 
 For example, if your character likes to pick fights, perhaps their hands would be more rugged or exaggeratedly large.
 
-![[character_design.png]]
+![[character_design.png|style.png]]
 
 Ideally, write down the traits of your protagonist(s) - they need to have good characteristics that make them likeable. They also need flaws to make them relatable and clearly imperfect, since perfect people don't have problems and are generally very boring.
 

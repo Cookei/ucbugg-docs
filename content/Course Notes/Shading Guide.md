@@ -1,7 +1,7 @@
 ---
 tags:
-  - shading
   - note
+  - shading
 image: "[[THUMBNAIL_ShadingGuide.jpg]]"
 author:
 ---
