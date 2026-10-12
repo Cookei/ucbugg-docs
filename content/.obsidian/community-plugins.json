@@ -9,5 +9,6 @@
   "file-cleaner-redux",
   "attachment-management",
   "obsidian-linter",
-  "obsidian-wrap-with-shortcuts"
+  "obsidian-wrap-with-shortcuts",
+  "external-links-view"
 ]

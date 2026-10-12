@@ -1,0 +1,149 @@
+/*
+ * Styles for the External Links plugin
+ */
+
+.external-links-empty-message {
+	color: var(--text-muted);
+	font-style: italic;
+	padding: 20px;
+	text-align: center;
+}
+
+.external-links-summary {
+	color: var(--text-muted);
+	margin-bottom: 20px;
+	padding: 10px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.external-links-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.external-links-file {
+	margin-bottom: 20px;
+	background: var(--background-secondary);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.external-links-button-container {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 16px;
+	padding: 0 10px;
+}
+
+.external-links-expand-button,
+.external-links-collapse-button {
+	padding: 4px 8px;
+	border-radius: 4px;
+	background: var(--background-modifier-border);
+	color: var(--text-normal);
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	transition: all 0.2s ease;
+}
+
+.external-links-expand-button:hover,
+.external-links-collapse-button:hover {
+	background: var(--background-modifier-hover);
+}
+
+.external-links-expand-button.is-active,
+.external-links-collapse-button.is-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.external-links-file-header {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background: var(--background-secondary-alt);
+	gap: 8px;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s ease;
+}
+
+.external-links-file-header:hover {
+	background: var(--background-modifier-hover);
+}
+
+.external-links-file-header.collapsed::before {
+	content: "►";
+	font-size: 0.8em;
+	margin-right: 4px;
+}
+
+.external-links-file-header:not(.collapsed)::before {
+	content: "▼";
+	font-size: 0.8em;
+	margin-right: 4px;
+}
+
+.external-links-file-icon {
+	margin-right: 4px;
+}
+
+.external-links-filename {
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.external-links-count-badge {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	padding: 2px 8px;
+	border-radius: 10px;
+	font-size: 0.8em;
+}
+
+.external-links-sublist {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+
+.external-links-item {
+	margin: 8px 0;
+}
+
+.external-links-link-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px;
+	border-radius: 4px;
+	transition: background-color 0.2s ease;
+}
+
+.external-links-link-container:hover {
+	background: var(--background-modifier-hover);
+}
+
+.external-links-link-icon {
+	flex-shrink: 0;
+}
+
+.external-links-url {
+	color: var(--text-accent);
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.external-links-url:hover {
+	text-decoration: underline;
+}
+
+.external-links-sublist.hidden {
+  display: none;
+}

@@ -25,5 +25,24 @@
       ],
       "key": "S"
     }
+  ],
+  "obsidian-excalidraw-plugin:save": [],
+  "better-links:create-link-at-cursor": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "E"
+    }
+  ],
+  "markdown:toggle-preview": [],
+  "buttons:button-maker": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
   ]
 }
