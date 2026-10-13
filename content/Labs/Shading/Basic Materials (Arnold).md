@@ -38,7 +38,11 @@ In today's lab, we will be using both materials and textures together to explore
 
 Please download and unzip the following lab file to get started.
 
-[ArnoldUniformMaterials](ArnoldUniformMaterials.zip)
+<a href="ArnoldUniformMaterials.zip">  
+	<button class="download"> Download 
+		<b>ArnoldUniformMaterials.zip</b>
+	</button>  
+</a>
 
 Materials and shaders as a whole are unique to each render engine. For example, `aiStandardSurface` is unique to and only works with Arnold. Other render engines have their own equivalents, like Pixar Renderman's `pxrSurface`.
 
@@ -108,7 +112,11 @@ I won't go over every single one of the `aiStandardSurface` attributes, but I wi
 
 Next, let's assign a texture to our objects! As a reminder, textures are 2d images that you assign to materials to give more flexibility in the way they look. Today we'll go over assigning UV Editing and assigning texture maps. Please download and open this lab template.
 
-[ArnoldUVUnwrap](ArnoldUVUnwrap.zip)
+<a href="ArnoldUVUnwrap.zip">  
+	<button class="download"> Download 
+		<b>ArnoldUVUnwrap.zip</b>
+	</button>  
+</a>
 
 You should see a pencil mesh sitting on top of a plane. The `aiStandardSurface` has not been assigned to the pencil yet, so please assign it and name it something descriptive.
 

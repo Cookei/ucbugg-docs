@@ -16,7 +16,11 @@ This lab explores how to achieve a cell shaded toon look in Maya using Arnold. T
 
 Download and unzip the toon shader lab here:
 
-[ArnoldToonShading](ArnoldToonShading.zip)
+<a href="ArnoldToonShading.zip">  
+	<button class="download"> Download 
+		<b>ArnoldToonShading.zip</b>
+	</button>  
+</a>
 
 Open `ToonShadingLab_Start.ma` and set your project to the lab (this should be the folder that contains `workspace.mel`). You should see a sphere, a human, and a directional light.
 
@@ -286,7 +290,7 @@ Render as exr images. Alpha channel is supported in Arnold EXR image sequence re
 However, you will need to render twice. When the filter is set to Contour, Arnold only renders edges. When the filter is set to the default Gaussian filter, Arnold renders everything but edges.  
 You will have to render one pass with the Contour filter and another pass with the Gaussian filter. Then composite the edges over everything else.
 
-# (optional read) Cool Stuff You Can Do With Toon Shading: Combining 2D and 3D Animation
+# (Optional Read) Cool Stuff You Can Do With Toon Shading: Combining 2D and 3D Animation
 
 Toon shading makes it easier to combine 2D and 3D animation by making the two styles look more consistent. There are many ways to combine 2D and 3D animation.
 
