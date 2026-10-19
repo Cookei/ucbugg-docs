@@ -1,10 +1,9 @@
 views:
-  - type: table
-    name: Cards
+  - type: cards
+    name: Past Staff
     filters:
       and:
         - file.folder == "assets/staff-images/past-staff"
-    sort:
-      - property: file.name
-        direction: ASC
+    cardSize: 200
     image: file.file
+    imageAspectRatio: 1

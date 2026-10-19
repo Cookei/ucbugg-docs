@@ -5,6 +5,8 @@ tags:
 image: "[[THUMBNAIL_Skinning.png]]"
 author:
 ---
+> [!caution] Attention
+> As of Maya 2027, a much better tool for painting skin weights called **Skin Tools** is available. This lab currently uses the **Paint Skin Weights** tool, the previous weight painting tool native to Maya.
 # INTRODUCTION
 
 ## WHAT IS SKINNING?
@@ -119,7 +121,7 @@ There’ll be higher priority issues and lower priority ones in your model’s s
 
 This is where the actual painting takes place.
 
-Go to SkinàPaint Skin Weights and click the option box. A menu on the left should open. This is what it would look like:
+Go to `Skin → Paint Skin Weights` and click the option box. A menu on the left should open. This is what it would look like:
 
 ![](skinning6.jpg)
 

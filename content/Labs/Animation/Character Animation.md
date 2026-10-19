@@ -8,7 +8,7 @@ author:
 ---
 # INTRODUCTION
 
-[advanced_anim_lab.zip](advanced_anim_lab.zip)
+[advanced_anim.zip](advanced_anim.zip)
 
 In this lab we'll work on animating a vanilla walk. Walks are hard, and vanilla walks are even harder because you see them every day. So if your walk is off, someone will notice.
 
