@@ -362,7 +362,9 @@ Please read the following guides on how to do weight painting before continuing.
 
 While this lab won’t go fully in-depth on skinning and all features inside of **Skin Tools**, we recommend looking at other resources to help you out with skinning your own characters for your short!
 
-If you would like to learn more about **Skin Tools**, such as the workflow for skinning from beginning to end with it as well as the other features such as Layers, you can watch the walkthrough below:
+If you would like to learn more about **Skin Tools**, such as the workflow for skinning from beginning to end with it as well as the other features such as Layers, you can watch the walkthroughs below:
+
+![](https://youtu.be/caggPv0OW6s)
 
 ![](https://youtu.be/xAi6cSyAV9M)
 
