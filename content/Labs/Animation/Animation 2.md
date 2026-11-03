@@ -7,9 +7,13 @@ author:
 ---
 # INTRODUCTION
 
-In this lab you'll learn how to animate a pendulum. To follow along, use **follow_along.mb**
+In this lab you'll learn how to animate a pendulum. To follow along, please unzip the **anim_2_lab.zip** folder and open **follow_along.mb**.
 
-[advanced_anim_lab.zip](advanced_anim_lab.zip)
+<a href="anim_2_lab.zip">  
+	<button class="download"> Download 
+		<b>anim_2_lab.zip</b>
+	</button>  
+</a>
 
 When I say a pendulum I mean something like this: a base, and a chain that responds to the movements in the base.
 
@@ -18,6 +22,7 @@ When I say a pendulum I mean something like this: a base, and a chain that respo
 This will allow us to practice overlapping action.
 
 So let's say we have the following:  
+
 ![](left_motion_pendulum.gif)
 
 How would the chain behave? Let's start with the top of the chain and work our way to the bottom.
@@ -50,7 +55,7 @@ Let's see what that looks like by hitting play.
 
 # (DE)AMPLIFYING CURVES
 
-To me, that looks a little too intense. Let's deamplify the second links rotation. I do this by selecting the curve and typing in _=.5 in the second stats box. _=.5 means "for all the selected keys, multiply their magnitude by .5. This deamps our curve by half.
+To me, that looks a little too intense. Let's de-amplify (decrease the intensity of) the second links rotation. I do this by selecting the curve and typing in `*=.5` in the second Stats box. `*=.5` means "for all the selected keys, multiply their magnitude by .5. This de-amplifies our curve by half.
 
 ![](deamp_second_link.gif)
 
@@ -84,7 +89,7 @@ This is what my final version looks like.
 
 # HOMEWORK
 
-In pendulum_assignment.mb you'll find an already animated pendulum base.
+In **pendulum_assignment.mb** you'll find an already animated pendulum base.
 
 ![](pendulum_assignment.gif)
 
@@ -93,3 +98,6 @@ Your job is to animate the chain below it. I'd approach this assignment by anima
 If you're unsure about how a pendulum would move, I'd suggest checking out this video.
 
 ![](https://www.youtube.com/embed/mKX-MOqmm4E)
+
+> [!todo] Submission
+> For deliverables, you can submit the Maya file directly, renamed as `section_hw9_firstname_lastname.ma`. You do not need to make a playblast.

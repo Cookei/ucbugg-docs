@@ -37,7 +37,7 @@ draft: false
 
 Recall that the best practice for splitting up animation is to break it down into scenes first, then break down each scene into camera shots. Make sure to correctly set up each shot in its own file by referencing the set / background and referencing the character rigs. A good format to follow is to create a scene template that can be referenced in every shot of that scene. Here’s a diagram showcasing an example of this:
 
-![[scene_organization.png]]
+![[IMG-20261026170624904.png]]
 
 > [!warning] DO NOT KEY THE MASTER CONTROLLER
 > **Never keyframe the master controller!** Recall that the master controller is the highest controller in the hierarchy. The purpose of the master controller is to allow you to move the whole animation in case something needs to be adjusted. **Movement should be done using other controllers, such as the Center of Gravity (CoG) controller**.
@@ -62,3 +62,16 @@ Recall that the best practice for splitting up animation is to break it down int
 > - A completed blocking animation of your short
 >   
 > Additionally, you will need to do a write-up of 4-5 sentences and provide feedback about your group and its facilitators.
+
+
+## Midterm Rubric
+
+| Item                            | Points |
+| ------------------------------- | ------ |
+| Playblast / Blocking animation  | 5      |
+| Rigged characters               | 5      |
+| Shaded characters               | 5      |
+| Shaded assets / sets (rendered) | 5      |
+| Write-up                        | 10     |
+| Feedback grade                  | 5      |
+| **Total**                       | **35** |
