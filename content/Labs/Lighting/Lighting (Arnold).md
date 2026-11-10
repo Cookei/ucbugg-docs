@@ -27,12 +27,17 @@ The purpose of this lab is to guide you and get you familiar with the tools rela
 
 To start, please download this lab file.
 
-[lighting_lab.zip](lighting_lab.zip)
+<a href="lighting_lab.zip">  
+	<button class="download"> Download 
+		<b>lighting_lab.zip</b>
+	</button>  
+</a>
 
-> "Lamppost - Street Light" (https://skfb.ly/6WXI6) by Humphrorange is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-> "Caltrans streetlight 2" (https://skfb.ly/oC6ON) by Streetlights & ETC is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+> [!example] Asset Credits
+> - "Lamppost - Street Light" (https://skfb.ly/6WXI6) by Humphrorange is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+> - "Caltrans streetlight 2" (https://skfb.ly/oC6ON) by Streetlights & ETC is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
-Open up lighting_lamps.ma. You should see a simple scene with two different looking lamps.
+Open up **lighting_lamps.ma**. You should see a simple scene with two different looking lamps.
 
 If we try to render now, we'll notice that we can't see anything. This is because there are no lights in our scene. Let's start off by adding an Arnold dome light!
 
@@ -42,7 +47,7 @@ Navigate to the Arnold tab on the shelf, and click this button to create a dome 
 
 Now if we try to render, we should be able to see things! Unfortunately, it's not very bright, and it's also not very interesting.
 
-We can change the color, exposure, and intensity of the light by editing the light's settings in the attribute editor.
+We can change the color, exposure, and intensity of the light by editing the light's settings in the Attribute Editor.
 
 ![](img4.png)
 
@@ -52,7 +57,7 @@ Try playing around with the color, exposure, and intensity to get something inte
 
 Here is the result of me tweaking some settings!
 
-> (!important)
+> [!check]
 > Take a screenshot of your experimentation with the dome light and save it. You will need to submit this later. Make sure to have the dome light deselected.
 
 ## Physical Sky
@@ -73,7 +78,7 @@ Here you can adjust various settings to get a simulated sky look. The key attrib
 
 Mess around with the settings to see if you can create anything interesting!
 
-> (!important)
+> [!check] DELIVERABLE: Screenshot
 > Take a screenshot of your experimentation with the physical sky and save it. You will need to submit this later. Make sure to have the dome light deselected.
 
 Here is what I made. Notice how the color of the sky affects the lamp's glass.
@@ -102,15 +107,16 @@ If you do not want to be able to see the HDR in your final render, and only want
 
 ![](img11.png)
 
-> (!important)
+> [!check] DELIVERABLE: Screenshot
 > Take a screenshot of your experimentation with the HDR and save it. You will need to submit this later. Make sure to have the dome light deselected.
 
 # Lighting Lamps
 
 Here, we will be lighting the two lamps. This will cover various techniques so make sure you pay attention!
 
-First, we want to delete our existing dome light and create a point light. To do this, go to Create -> Lights -> Point Light. It is a bit confusing that this isn't in the Arnold tab, but it is what it is.
+First, we want to delete our existing dome light and create a point light. To do this, go to `Create → Lights → Point Light`. It is a bit confusing that this isn't in the Arnold tab, but it is what it is.
 
+> [!note] Maya Lights vs. Arnold Lights
 > The reason why the Point Light, Directional Light, and Spot Lights aren't in the Arnold tab is that those lights are Maya lights. Maya lights work together with Arnold so there's no issue, but due to trying to maintain legacy systems, that's why it's there and not in the Arnold tab. The general rule of thumb is, if it doesn't exist in the Arnold tab, then check the Maya lights. Always use Arnold lights if possible.
 
 ![](img12.png)
@@ -139,7 +145,7 @@ The second method is to use light linking. Note that for this specific purpose, 
 
 Light linking allows you to control which objects are lit by which lights, and which lights light which objects.
 
-To access this menu, go to Windows -> Relationship Editors -> Light Linking -> Light Centric
+To access this menu, go to `Windows → Relationship Editors → Light Linking → Light Centric`.
 
 ![](img16.png)
 
@@ -183,7 +189,7 @@ Under the Arnold tab, check the Use Color Temperature tickbox and then change th
 
 We have one last issue with our light unfortunately. Namely, the actual bulb doesn't look like it's emitting any light! To fix this, we're going to be using the Emission attribute in its _shader_. Select the light bulb, go to its shader in the attribute editor, and under the Emission tab, set the Weight to 1. I also adjust the color to give it a brighter appearance.
 
-> (!important)
+> [!important]
 > Emission is NOT an effective way to light a scene. It simply gives of the APPEARANCE that an object is glowing. Use a combination of emission and real lights to achieve your desired effect
 
 ![](img21.png)
@@ -192,7 +198,7 @@ You should now be able to see your light bulb.
 
 ## Lamp2
 
-For Lamp2, we're going to be using a spot light. A spot light is another Maya light, so go to Create -> Lights -> Spot Light and position it accordingly.
+For Lamp2, we're going to be using a spot light. A spot light is another Maya light, so go to `Create → Lights → Spot Light` and position it accordingly.
 
 ![](img22.png)
 
@@ -210,14 +216,14 @@ Once again, we can adjust the color temperature to give a very cold look.
 
 ![](img25.png)
 
-> (!important)
+> [!check] DELIVERABLE: Screenshot
 > Take a screenshot of both your lights together and save it. You will need to submit this later.
 
 ## Bonus: Volumetric Lighting
 
 This is cool and all, but what if we wanted to see the cone of the light itself? What if we wanted volumetric lighting? God rays? Just like in real life, in order to achieve this effect, we need fog in our scene.
 
-To do this, go to Windows -> Rendering Editors -> Render Settings to access your render settings. Here, go to the Arnold Renderer tab and under Environment, connect a aiAtmosphereVolume to the Atmosphere attribute.
+To do this, go to `Windows → Rendering Editors → Render Settings` to access your render settings. Here, go to the Arnold Renderer tab and under Environment, connect a aiAtmosphereVolume to the Atmosphere attribute.
 
 ![](img26.png)
 
@@ -229,30 +235,38 @@ Setting the density to something like 0.1, you can see how it affects the scene.
 
 ![](img28.png)
 
-# Indoor Lighting
+> [!check] DELIVERABLE: Zipped Lamp Lighting Folder
+> Archive **lighting_lamps.ma** (`File → Archive Scene`) and make sure the `.zip` file contains your Maya file along with the textures. Submit it to Gradescope. Additionally, also submit all required rendered images.
+# Indoor Lighting (EXTRA CREDIT)
 
-Let's close out of lighting_lamps.ma and instead open lighting.ma. You should be greeted with an enclosed room with a couple of windows.
+> [!warning] Before you continue…
+> The rest of this lab is considered **OPTIONAL** material. If you would like to learn about lighting indoor scenes, feel free to follow the rest of this lab. 
+> 
+> **You can receive up to 5 points of EXTRA CREDIT for completing this portion correctly.**
 
-> "ROOMV1352233754567" (https://skfb.ly/puT6t) by tokoissick is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+Let's close out of **lighting_lamps.ma** and instead open **lighting.ma**. You should be greeted with an enclosed room with a couple of windows.
 
-> I have created a display layer to help you navigate the room a bit more. Toggle on and off the V in the display layer to turn on and off the walls. Make sure to turn them back on when you're rendering.
+> [!example] Asset Credits
+> - "ROOMV1352233754567" (https://skfb.ly/puT6t) by tokoissick is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+I have created a display layer to help you navigate the room a bit more. Toggle on and off the V in the display layer to turn on and off the walls. Make sure to turn them back on when you're rendering.
 
 ![](img29.png)
 
 Additionally there is a camera called FinalCam that you can look through to see the entire scene. Use this when taking your screenshots.
 
-# Ambient Lighting
+## Ambient Lighting
 
 To start off with, let's add a dome light to get some light pouring in through the windows. Set the exposure to something high like 5. I've also adjusted the color temperature to something a bit more blue.
 
 We do **NOT** want to use an HDRI since that adds unneeded complexity and render time. The window is small and the pros of an HDRI in an indoor scene like this one are negligable.
 
-> (!important)
-> For this part of the assignment, **ALL images must be generated from the render view**. You can go to the render view by going to Arnold -> Render View. This should open up a popup window.
+> [!important]
+> For this part of the assignment, **ALL images must be generated from the render view**. You can go to the render view by going to `Arnold → Arnold Render View`. This should open up a popup window.
 
 ![](img30.png)
 
-> (!important)
+> [!important] Set Your Renderable Camera
 > Make sure to change the camera here in the render view to the FinalCam. There's a dropdown menu in the upper left corner.
 
 You can see here in our render that it is incredibly noisy. This is because there is only a small opening for the light to come through. Since the dome light spans all 360 degrees, there a high likelihood that most of the light rays will be blocked by an object, leading to a lot of noise.
@@ -273,7 +287,7 @@ We can improve this even more by increasing the sample count. Selecting the dome
 
 ![](img34.png)
 
-## Interior lighting
+## Interior Lighting
 
 Now, let's work on lighting the interior scene. We'll start with realistic light sources from the scene. This includes the lamp post, fairy lights, as well as the TV and Monitor screens.
 
@@ -289,16 +303,16 @@ Next, let's work on the TV and the Computer screen. Here, we want to create Area
 
 Here I used the display layer toggle to make it easier to move around in the scene.
 
-After adjusting the exposure settings, we get this image! I also adjusted the Visibility -> Camera slider so we can see the light itself. The area light is very useful and has a couple shape settings. By default, it's a rectangle, but depending on your scene, it can be a disk as well.
+After adjusting the exposure settings, we get this image! I also adjusted the `Visibility → Camera` slider so we can see the light itself. The area light is very useful and has a couple shape settings. By default, it's a rectangle, but depending on your scene, it can be a disk as well.
 
 ![](img38.png)
 
 Not bad!
 
-> (!info)
+> [!info] Fairy Lights
 > For the fairy lights, this would be the perfect situation to use the Emission attribute in the shader. Unfortunately, since this is a new lab, I didn't have the time to set up the aiStandardSurface for the lights and instead they're phong shaders. If you want, you can assign aiStandardSurfaces to them to get them to glow. You can also take the time to make point lights for each them to get them to glow as well (light linking would be helpful here). Instead, I'm going to skip doing them.
 
-## Motivated lighting.
+## Motivated Lighting
 
 The scene is looking quite good, but let's add some motivated lighting. Motivated lighting is unrealistic lighting meant to add to a scene artistically. Here, we want to brighten up maybe parts of this person's desk. We can add a motivated light to achieve this.
 
@@ -308,11 +322,11 @@ Here I added in an area light to light up the part of the scene. I also unchecke
 
 ![](img40.png)
 
-> (!important)
+> [!check] DELIVERABLE: Screenshot
 > Take a screenshot of your lit bedroom and save it.
 
-> (!important)
-> Please zip up your your project file (should have both maya files, texture folders, etc) and submit it to bcourses. Additionally, also submit all required rendered images.
+> [!check] DELIVERABLE: Zipped Indoor Lighting Folder
+> Archive **lighting.ma** (`File → Archive Scene`) and make sure the `.zip` file contains your Maya file along with the textures. Submit it to Gradescope. Additionally, also submit all required rendered images.
 
 # Bonus
 
