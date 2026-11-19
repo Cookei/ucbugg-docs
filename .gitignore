@@ -1,0 +1,24 @@
+.DS_Store
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+
+# Obsidian workspace state — ignore this
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
+
+# Obsidian cache
+content/.obsidian/cache/
+
+# Optional: Obsidian sync metadata
+content/.obsidian/.sync/
+
+.quartz-cache
+private/
+.replit
+replit.nix
+.quartz/
+quartz/cli/tui/dist/
+.turbo/
