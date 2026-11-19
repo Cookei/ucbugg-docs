@@ -2,10 +2,9 @@
 tags:
   - lab
   - "#rendering"
-image: "[[IMG-20261118000207534.png]]"
+image: "[[IMG-20261118191437652.png]]"
 author: Han Li
 ---
-
 # Introduction
 
 Welcome to the rendering lab! This lab will cover how to set up basic render settings in your scene as well as how to use AOVs to optimize the speed of your renders. Note that rendering can get quite technical and is quite complex, however, this lab is meant to provide you an introduction to rendering optimization.
@@ -37,19 +36,19 @@ To start, please download this lab file.
 	</button>  
 </a>
 
-You should see a scene that looks something like this
+You should see a scene that looks something like this:
 
-![[Pasted image 20261118044720.png]]
+![[IMG-20261118191437620.png]]
 
 ## Render Settings
 
-The first thing you should do before rendering is to check your render settings. To do so, go to `Windows` → `Rendering Editors` → `Render Settings`
+The first thing you should do before rendering is to check your render settings. To do so, go to `Windows → Rendering Editors → Render Settings`.
 
-![[Pasted image 20261118045223.png]]
+![[IMG-20261118191437624.png]]
 
-The follow settings should be checked on
+The follow settings should be checked on:
 
-![[Pasted image 20261118050534.png]]
+![[IMG-20261118191437625.png]]
 
 - **File name prefix**: This is the name of your output file. You should name it something descriptive related to your scene/shot number. It is extremely important that you **DO NOT** have spaces or special characters
 
@@ -65,21 +64,21 @@ The follow settings should be checked on
 
 - **Frame/Animation ext**: This is the extension naming scheme that is used to number your frames. For the purposes of this lab, you do not need to change this. However, when rendering your own animated sequences, it is recommended to change it to something like `name_#.ext`. This will number your frames `frame0001.exr`, `frame0002.exr`, etc
 
-When rendering out a sequence of frames, make sure you set your start and end frame as well. Again, for the purposes of this lab, this is not necessary
+When rendering out a sequence of frames, make sure you set your start and end frame as well. Again, for the purposes of this lab, this is not necessary.
 
-![[IMG-20261118051400229.png]]
+![[IMG-20261118191437510.png]]
 
 ---
 
-Scrolling down, we need to make sure we are rendering out of the correct camera. For this scene, the renderable camera is named `RenderCam`
+Scrolling down, we need to make sure we are rendering out of the correct camera. For this scene, the renderable camera is named `RenderCam`.
 
-![[IMG-20261118051617761.png]]
+![[IMG-20261118191437511.png]]
 
 Additionally, we need to make sure we are rendering with the following `HD_1080` preset. This will ensure we have the correct image resolution upon exporting.
 
 Next, let's go over to the `Arnold Renderer` tab and remove the `defaultArnoldDenoiser` imager.
 
-![[IMG-20261118051906849.png]]
+![[IMG-20261118191437512.png]]
 
 Imagers are Arnold's post-processing filters that are applied after your render. When we do compositing, we rarely want to rely on these imagers to modify our final output image. This because we want to have more precise control in our compositing software, and if we decide we don't like something when using an imager, we will have to re-render the entire thing.
 
@@ -89,31 +88,31 @@ Specifically, every scene that is created (as of Maya 2027) includes the `defaul
 
 At the top of the `Arnold Renderer` tab of our render settings, we can view our samples.
 
-![[Pasted image 20261118052635.png]]
+![[IMG-20261118191437642.png]]
 
 These are the default number of samples provided for this scene. Let's see how the render looks like as well as how long it'll take!
 
 ## Rendering
 
-To open up the rendering window, go to `Windows` → `Rendering Editors` → `Render View`
+To open up the rendering window, go to `Windows → Rendering Editors → Render View`
 
-![[Pasted image 20261118052816.png]]
+![[IMG-20261118191437643.png]]
 
 You should see something like that looks this.
 
-![[Pasted image 20261118052922.png]]
+![[IMG-20261118191437645.png]]
 
 First, we want to make sure that we are rendering out of the correct camera. You can select this in the upper left. If you do not see the name of the renderable camera, you might have to refresh it by clicking the refresh button on the right.
 
 To start a render, click the play button on the upper right hand corner.
 
-![[Pasted image 20261118053653.png]]
+![[IMG-20261118191437648.png]]
 
 Once it finishes rendering (there will be a progress bar on the bottom right hand corner), you can see how long the render took by looking at the bottom left hand corner. For me on my computer this scene too 8 minutes and 14 seconds to render.
 
-Take a snapshot by clicking the camera button on the bottom right hand corner. This will create a snapshot that you can view to do A/B testing when comparing different renders
+Take a snapshot by clicking the camera button on the bottom right hand corner. This will create a snapshot that you can view to do A/B testing when comparing different renders.
 
-> [!todo]
+> [!check] DELIVERABLE: First RenderView Screenshot
 > Take a screenshot of this window. Make sure the render time is visible
 
 We can see here how our image is quite noisy and looks pretty awful. Additionally, it takes quite a while to render as well! Let's optimize this scene.
@@ -126,7 +125,7 @@ We know we can recreate this in post using the `Z` AOV and the `motionvector` AO
 
 Go to the `Diagnostics` tab of the render settings and scroll down to `Feature Overries`. Here, tick on `Ignore Motion` and `Ignore Depth of Field`. This will create an override during your render that will disable these effects.
 
-![[IMG-20261118153650114.png]]
+![[IMG-20261118191437513.png]]
 
 ## AOVs
 
@@ -151,24 +150,24 @@ Head over to the `AOV Browser` and add the following AOVs
 - <samp>volume_direct</samp>
 - <samp>volume_indirect</samp>
 
-![[IMG-20261118155421022.png]]
+![[IMG-20261118191437514.png]]
 
 If your specific scene has sheen, coat, etc, you may have to add those AOVs for your specific scene as well.
 
 > [!abstract] Understanding the difference between Direct and Indirect
-> ![[IMG-20261118155847549.png]]
+> ![[IMG-20261118191437515.png]]
 >
 > In this image, the first ray is direct light while the second ray is indirect light. In other words, direct light, and consequently direct AOVs, are related to light that comes directly from the source. Indirect light are incident rays that come from a bounced surface first
 >
 > `diffuse_direct` $+$ `diffuse_indirect` $=$ `diffuse AOV`
 
-Before we start another render, let's also lower our sample count in our render settings. Generally speaking, you want to start with something low and gradually work your way up. I like to start with these settings
+Before we start another render, let's also lower our sample count in our render settings. Generally speaking, you want to start with something low and gradually work your way up. I like to start with these settings:
 
-![[IMG-20261118160739232.png]]
+![[IMG-20261118191437516.png]]
 
 Now, let's start up another render!
 
-![[IMG-20261118161101810.png]]
+![[IMG-20261118191437517.png]]
 
 Here this render with the reduced settings looks arguably a lot worse (which makes sense considering we lowered the settings) but provided us with a good starting point, coming in at 2 minutes and 28 seconds of render time.
 
@@ -185,9 +184,9 @@ Thankfully for this scene, it seems like a value of 2 should be good enough and 
 
 The first thing we want to look at is the `cputime` AOV. On the upper left hand corner, click the drop down menu to switch the current AOV to the `cputime` AOV. At first, you might see something that is pure white and that is normal. The `cputime` AOV contains data pertaining to how much time your computer spent processing different parts of your render. As such, it contains data values much much higher than 1 (the number associated with the color white).
 
-To adjust everything down to a visible range for us to examine, we can lower the exposure of the image. On the right toolbar, you can drag the exposure slider down or input a number. I found that a value of <samp>-10</samp> works pretty well for me. A reminder that exposure is a logarithmic scale, which means each additional number is a doubling of exposure
+To adjust everything down to a visible range for us to examine, we can lower the exposure of the image. On the right toolbar, you can drag the exposure slider down or input a number. I found that a value of <samp>-10</samp> works pretty well for me. A reminder that exposure is a logarithmic scale, which means each additional number is a doubling of exposure.
 
-![[IMG-20261118161637166.png]]
+![[IMG-20261118191437524.png]]
 
 The brighter parts of the image correspond to parts of your render that your computer spent more time on. In this scene, we can see that the brightest parts are the material of the toy's body. There is very little render time spent on the ball and the gun. Viewing the `cputime` AOV is a really helpful way to identify and narrow down which parts of your scene need the most attention.
 
@@ -197,7 +196,7 @@ The brighter parts of the image correspond to parts of your render that your com
 
 Next, let's reset our exposure compensation back to 0 and view the `diffuse_indirect` AOV.
 
-![[IMG-20261118162757975.png]]
+![[IMG-20261118191437528.png]]
 
 Here we can see that there is quite a noise in this AOV. Since this is the AOV related to indirect diffuse samples, the solution is to increase the number of diffuse samples.
 
@@ -205,112 +204,115 @@ To save yourself the trouble of rendering out the entire image every time, we ca
 
 You can define a crop window by clicking the blue square next to the exposure compensation slider at the top and drag clicking a part in your render to crop out.
 
-![[IMG-20261118163337024.png]]
+![[IMG-20261118191437539.png]]
 
-![[IMG-20261118163425467.png]]
+![[IMG-20261118191437540.png]]
 
-Here is a comparison of a crop window centered on this ball with a diffuse sample count of 1 vs a sample count of 2
+Here is a comparison of a crop window centered on this ball with a diffuse sample count of 1 vs a sample count of 2.
 
-> [!todo]
-> Take a screenshot of your entire render view with a crop window defined with both a diffuse sample count of 1 and a diffuse sample count of 2
+> [!check] DELIVERABLE: Diffuse Sample Screenshots
+> Take a screenshot of your entire render view with a crop window defined with BOTH a diffuse sample count of 1 AND a diffuse sample count of 2
 
-> [!info]
+> [!info] Use Crop Window
 > For the rest of this section, you do not have to render out the entire scene when viewing AOVs. Simply define a crop window to view things specifically. The lab shows you the entire scene primarily just for your understanding of the concepts
 
 ### Light Sample Noise
 
-Next, let's take a look at our `specular_direct` AOV
+Next, let's take a look at our `specular_direct` AOV:
 
-![[IMG-20261118163932578.jpg]]
+![[IMG-20261118191437541.jpg]]
 
-Here we can see that it isn't very noisy so there's no problem. If there were noise in this AOV, the solution would be to increase the number of light samples associated with the light that is causing the noise. Next let's take a look at the `diffuse_direct` AOV
+Here we can see that it isn't very noisy so there's no problem. If there were noise in this AOV, the solution would be to increase the number of light samples associated with the light that is causing the noise. Next let's take a look at the `diffuse_direct` AOV:
 
-![[IMG-20261118164031948.jpg]]
+![[IMG-20261118191437542.jpg]]
 
 Here, we want to specifically examine the shadows.
 
-![[IMG-20261118164100239.png]]
+![[IMG-20261118191437549.png]]
 
 Zooming in, we can see that the shadows are quite noisy. The solution to this is to increase the number of light samples related to the light that is causing this shadow.
 
 > [!abstract] Light Samples
 > When a ray hits a surface, it needs to know if that point is being directly lit by a light. Thus, it shoots a shadow ray directly at every light source. If this light sample gets blocked by an object, then it's in direct shadow, otherwise, it is being illuminated.
 >
-> ![[IMG-20261118164639545.png]]
+> ![[IMG-20261118191437555.png]]
 >
-> When we have noise in the direct diffuse AOV's shadows, this tells us that we are not sampling the light source enough
+> When we have noise in the direct diffuse AOV's shadows, this tells us that we are not sampling the light source enough.
 
-Select the area light in the scene and increase the number of samples from 1 to 3
+Select the area light in the scene and increase the number of samples from 1 to 3.
 
-![[IMG-20261118164916259.png]]
+![[IMG-20261118191437557.png]]
 
-Doing another render, we can see how the noise in the shadows really clears up
+Doing another render, we can see how the noise in the shadows really clears up.
 
 ### Transmission Noise
 
-Next, let's take a look at the `transmission_indirect` AOV
+Next, let's take a look at the `transmission_indirect` AOV:
 
-![[IMG-20261118165149682.png]]
+![[IMG-20261118191437562.png]]
 
-Here we an see that there is very little noise associated with this AOV. If there was noise, the solution would be to increase the number of <samp>Transmission</samp> samples
+Here we an see that there is very little noise associated with this AOV. If there was noise, the solution would be to increase the number of <samp>Transmission</samp> samples.
 
 ### SSS Noise
 
 Next, let's take a look at the `SSS` AOV. This AOV corresponds to subsurface scattering in our scene.
 
-![[IMG-20261118170106636.jpg]]
+![[IMG-20261118191437565.jpg]]
 
 Here we can see that there is a *LOT* of noise. This makes sense. Additionally, this corresponds to where we were seeing where a lot of the render time was allocated to in the `cputime` AOV earlier.
 
-To improve SSS noise, we need to increase the number of SSS samples. Here I increased it from 2 to 3
+To improve SSS noise, we need to increase the number of SSS samples. Here I increased it from 2 to 3:
 
-![[IMG-20261118171054115.png]]
+![[IMG-20261118191437581.png]]
 
-![[IMG-20261118170456222.jpg]]
+![[IMG-20261118191437568.jpg]]
 
 ### Volumetric Noise
 
-Next let's take a look at the `volume_direct` AOV
+Next let's take a look at the `volume_direct` AOV:
 
-![[IMG-20261118170607390.jpg]]
+![[IMG-20261118191437571.jpg]]
 
-Here we can see quite a bit of noise related to the light that is causing this atmospheric scattering effect in the volume. To fix this, we need to go to the light that is causing this noise. In this case, it is the spotlight in the scene. Then, under the `Arnold` tab, change the number of <samp>Volume Samples</samp> to 3
+Here we can see quite a bit of noise related to the light that is causing this atmospheric scattering effect in the volume. To fix this, we need to go to the light that is causing this noise. In this case, it is the spotlight in the scene. Then, under the `Arnold` tab, change the number of <samp>Volume Samples</samp> to 3.
 
-![[IMG-20261118171021621.png]]
+![[IMG-20261118191437580.png]]
 
-![[IMG-20261118171538449.jpg]]
+![[IMG-20261118191437582.jpg]]
 
 ### Comparison
 
-After  
-![[IMG-20261118171651019.jpg]]
+#### Before
 
-Before  
-![[IMG-20261118173646491.jpg]]
+![[IMG-20261118191437598.jpg]]
+
+#### After  
+
+![[IMG-20261118191437587.jpg]]
 
 The original took 8 minutes and 18 seconds while after our changes it took 5 minutes and 1 second. There's still quite a bit of noise though so let's clean that up using denoising.
 
-> [!todo]
-> Submit a screenshot of your render view showcasing the render with the changes we made as well as the amount of time it took to render the frame
+> [!check] DELIVERABLE: Optimized RenderView Screenshot
+> Submit a screenshot of your render view showcasing the render with the changes we made **as well as the amount of time it took to render the frame**.
 
 ## Denoising
 
 Go back to your render settings and add the Oidin denoiser. Note that this imager is **NOT** temporally stable so you should not be rendering animated sequences with this. However, it is useful to get a preview of what a denoised sequence would look like, as well as for still frame rendering.
 
-![[IMG-20261118174623504.png]]
+![[IMG-20261118191437603.png]]
 
 After applying the denoiser, start another render.
 
-![[IMG-20261118175317881.jpg]]
+![[IMG-20261118191437603.jpg]]
 
 The denoiser does a lot to improve a scene. It is important though that we try to reduce as much of our noise via sampling instead of only relying on a denoiser. A denoiser applied to an incredibly noisy image will have artifacts that look unnatural and out of place.
 
 Once we can see our denoised image, we can probably afford to reduce some of our render settings to compensate. Here I ran another render with my SSS sample count down to 2 instead of 3. Here my final render time is 4 minutes and 43 seconds.
 
-![[IMG-20261118175941548.jpg]]
+![[IMG-20261118191437607.jpg]]
 
-> [!todo]
-> Save out your denoised image by going to `File` → `Save Image` in your render view
+> [!check] DELIVERABLE: Denoised Image
+> Save out your denoised image by going to `File → Save Image` in your render view. The file format can be any typical image format (`.png`/`.jpg`).
+> **Note that this is *not* a screenshot.**
 
 # Preparing for Final Render
 
@@ -341,50 +343,50 @@ Next, go to our AOVs and remove all our AOVs. Only add AOVs that you know you wi
 
 For this lab specifically, we only require you to output the `Z` AOV and the `motionvector` AOV. This way, we can recreate the motion blur and depth of field that we disabled in our feature overrides.
 
-In order to successfully use the `motionvector` AOV to recreate motion blur, we need to make sure `Instantaneous Shutter` is checked on in the Motion Blur settings. Additionally **Make sure to uncheck Ignore Motion in the Diagnostic Feature Overrides**
+In order to successfully use the `motionvector` AOV to recreate motion blur, we need to make sure `Instantaneous Shutter` is checked on in the Motion Blur settings. Additionally, ***make sure to uncheck Ignore Motion in the Diagnostic Feature Overrides***.
 
-![[IMG-20261118181136927.png]]
+![[IMG-20261118191437610.png]]
 
 Additionally, in order to use the Noice denoiser, we need to check `Output Denoising AOVs` on. We also need the `N`, `P`, and `albedo` AOV enable. Also make sure `Preserve Layer Name` and `Merge AOVs` is ticked on.
 
-![[IMG-20261118183943576.png]]
+![[IMG-20261118191437620-1.png]]
 
-![[IMG-20261118181318295.png]]
+![[IMG-20261118191437613.png]]
 
 Next, change your `Frame/Animation ext` to <samp>name_#.ext</samp> so we can render out a sequence of frames rather than a still image. Set your start and end frames to 0 and 5 respectively and make sure your Renderable Camera is correct.
 
 Additionally, since rendering can take quite a while, feel free to lower your Image Size preset to <samp>HD_540</samp>. This should make it go faster for the purposes of this lab.
 
-![[IMG-20261118181812515.png]]
+![[IMG-20261118191437614.png]]
 
-To start a render, go to the Rendering tab here
+To start a render, go to the Rendering tab here:
 
-![[IMG-20261118181654206.png]]
+![[IMG-20261118191437613-1.png]]
 
-Then go to `Render` → `Render Sequence` option box
+Then go to `Render → Render Sequence` option box:
 
-![[IMG-20261118182015625.png]]
+![[IMG-20261118191437616.png]]
 
-Make sure your camera is correct and your output file is correct. Then click `Render Sequence`
+Make sure your camera is correct and your output file is correct. Then click `Render Sequence`:
 
-![[IMG-20261118182128445.png]]
+![[IMG-20261118191437616-1.png]]
 
 ## Applying the Denoiser
 
-Once you are done rendering, head over to `Arnold` → `Utilities` → `Arnold Denoiser (noice)`
+Once you are done rendering, head over to `Arnold → Utilities → Arnold Denoiser (noice)`:
 
-![[IMG-20261118183113480.png]]
+![[IMG-20261118191437617.png]]
 
 Here you can adjust the denoiser settings. The first thing to pay attention to is the input and output locations of your file. Select the first exr frame of your sequence
 
 - Temporal Stability frames determine who stable your denoising is over time. A higher value will make the denoider look at more frames in order to temporally denoise.
 - Pixel search radius is how many pixels the denoiser looks at to determine the color of any individual pixel.
 
-Play around with these two settings with a small frame range until you're satisfied before doing it on the complete sequence. Then, click `Denoise`
+Play around with these two settings with a small frame range until you're satisfied before doing it on the complete sequence. Then, click `Denoise`:
 
-![[IMG-20261118184719577.png]]
+![[IMG-20261118191437620-2.png]]
 
 You can view your denoised images by opening them up in the render view!
 
-> [!todo]
-> Zip up all your denoised exr files for submission
+> [!check] DELIVERABLE: 
+> Zip up all your denoised `.exr` files into a folder for submission.
