@@ -4,7 +4,6 @@ tags:
 author:
 draft: false
 ---
-
 # Individual Work
 
 > [!todo] TODO: Rendering Lab
