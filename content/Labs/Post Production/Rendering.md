@@ -5,6 +5,7 @@ tags:
 image: "[[IMG-20261118191437652.png]]"
 author: Han Li
 ---
+
 # Introduction
 
 Welcome to the rendering lab! This lab will cover how to set up basic render settings in your scene as well as how to use AOVs to optimize the speed of your renders. Note that rendering can get quite technical and is quite complex, however, this lab is meant to provide you an introduction to rendering optimization.
@@ -108,12 +109,15 @@ To start a render, click the play button on the upper right hand corner.
 
 ![[IMG-20261118191437648.png]]
 
-Once it finishes rendering (there will be a progress bar on the bottom right hand corner), you can see how long the render took by looking at the bottom left hand corner. For me on my computer this scene too 8 minutes and 14 seconds to render.
+Once it finishes rendering (there will be a progress bar on the bottom right hand corner), you can see how long the render took by looking at the bottom left hand corner. For me on my computer this scene took 8 minutes and 14 seconds to render.
 
 Take a snapshot by clicking the camera button on the bottom right hand corner. This will create a snapshot that you can view to do A/B testing when comparing different renders.
 
 > [!check] DELIVERABLE: First RenderView Screenshot
 > Take a screenshot of this window. Make sure the render time is visible
+
+> [!error] My Render is Taking Too Long!
+> If your render is still not finished after **15 minutes**, you can submit a screenshot at its current state. *Make sure to include the render time in your screenshot so this can be verified.*
 
 We can see here how our image is quite noisy and looks pretty awful. Additionally, it takes quite a while to render as well! Let's optimize this scene.
 
@@ -285,7 +289,7 @@ Here we can see quite a bit of noise related to the light that is causing this a
 
 ![[IMG-20261118191437598.jpg]]
 
-#### After  
+#### After
 
 ![[IMG-20261118191437587.jpg]]
 
@@ -311,7 +315,7 @@ Once we can see our denoised image, we can probably afford to reduce some of our
 ![[IMG-20261118191437607.jpg]]
 
 > [!check] DELIVERABLE: Denoised Image
-> Save out your denoised image by going to `File → Save Image` in your render view. The file format can be any typical image format (`.png`/`.jpg`).
+> Save out your denoised image by going to `File → Save Image` in your render view. The file format can be any typical image format (`.png`/`.jpg`).  
 > **Note that this is *not* a screenshot.**
 
 # Preparing for Final Render
@@ -388,5 +392,5 @@ Play around with these two settings with a small frame range until you're satisf
 
 You can view your denoised images by opening them up in the render view!
 
-> [!check] DELIVERABLE: 
+> [!check] DELIVERABLE:
 > Zip up all your denoised `.exr` files into a folder for submission.
