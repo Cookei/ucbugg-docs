@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v5
+      - website-deploy-patch
 
 permissions:
   contents: read
@@ -40,8 +41,6 @@ jobs:
             ${{ runner.os }}-plugins-
       - name: Install Dependencies
         run: npm ci
-      - name: Restore Quartz executable permissions
-        run: chmod +x node_modules/.bin/quartz
       - name: Install Quartz plugins
         run: npx quartz plugin install
       - name: Build Quartz
@@ -52,6 +51,7 @@ jobs:
           path: public
 
   deploy:
+    if: github.ref == 'refs/heads/v5'
     needs: build
     environment:
       name: github-pages
