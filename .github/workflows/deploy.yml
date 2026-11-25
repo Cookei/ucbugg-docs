@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v5
+      - website-deploy-patch
 
 permissions:
   contents: read
@@ -50,6 +51,7 @@ jobs:
           path: public
 
   deploy:
+    if: github.ref == 'refs/heads/v5'
     needs: build
     environment:
       name: github-pages
