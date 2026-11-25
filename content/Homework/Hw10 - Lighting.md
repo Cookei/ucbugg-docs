@@ -4,6 +4,7 @@ tags:
 author:
 draft: false
 ---
+
 # Individual Work
 
 > [!todo] TODO: Lighting Arnold Lab
@@ -17,7 +18,7 @@ draft: false
 > - Rendered screenshots - `lamp_section_hw10_1_firstname_lastname.png`, `lamp_section_hw10_2_firstname_lastname.png`, etc.
 
 > [!check] EXTRA CREDIT: Indoor Lighting Lab
-> 
+>
 > Please submit the following (`section` is either 003 or 303):
 > - The `.zip` indoor lighting folder - `indoor_section_hw10_firstname_lastname.zip`
 > - Rendered screenshots - `indoor_section_hw10_1_firstname_lastname.png`, `indoor_section_hw10_2_firstname_lastname.png`, etc.
@@ -53,13 +54,12 @@ draft: false
 
  If you are still improving the skinning of your rigs as well, make sure to update the referenced rig file so that it propagates across all animated shots using the rig.
 
-
 > [!warning] DO NOT KEY THE MASTER CONTROLLER
 > **Never keyframe the master controller!** Recall that the master controller is the highest controller in the hierarchy. The purpose of the master controller is to allow you to move the whole animation in case something needs to be adjusted. **Movement should be done using other controllers, such as the Center of Gravity (CoG) controller**.
 
 > [!todo] TODO: Refine Animation
 > Refine your animation! Check for any issues such as stuttering or stiff movements as well.
-> 
+>
 > If you would like to have your updated animation critiqued in class, please submit a playblast to the **Critique \#2 (Optional)** assignment on Gradescope.
 
 > [!todo] TODO: Add Lighting
@@ -68,7 +68,7 @@ draft: false
 ## Deliverables
 
 > [!check] SUBMIT: Team Progress Report
-> Complete the **Weekly Group Progress \#8** assignment on Gradescope as well as the relevant writeup. This should include a short description of what you did for the week, what your group’s overall progress is, as well as a screenshot of your slide deck of images detailing your work.
+> Complete the **Weekly Group Progress \#8** assignment on Gradescope as well as the relevant writeup. This should include a short description of what you did for the week, what your group's overall progress is, as well as a screenshot of your slide deck of images detailing your work.
 
 > [!check] OPTIONAL: Animatic / Shot Critique
-> If you would like your updated shot / animatic to be critiqued in the following week’s lecture, you can upload the playblast to the **Critique \#2 (Optional)** assignment on Gradescope.
+> If you would like your updated shot / animatic to be critiqued in the following week's lecture, you can upload the playblast to the **Critique \#2 (Optional)** assignment on Gradescope.

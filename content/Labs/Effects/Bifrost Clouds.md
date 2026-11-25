@@ -5,7 +5,8 @@ tags:
 image: "[[THUMBNAIL_BifrostClouds.jpg]]"
 author:
 ---
-# Welcome to the Bifrost Clouds lab
+
+# Welcome to the Bifrost Clouds Lab
 
 > This lab is newly made and is supposed to be a supplement for an advanced lecture. As such, most of the information will be in the lecture slides and video attached. In the future, this lab will be populated to act like a normal lab
 

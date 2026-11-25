@@ -5,25 +5,26 @@ tags:
 image: "[[THUMBNAIL_XGEN.png]]"
 author:
 ---
+
 # INTRODUCTION
 
 This lab will cover the basics of the XGEN hair system in Maya. We will just be going over the process of creating and shaping hair as well as rendering it. This tutorial will not go over doing dynamic hair with simulations but that can be done in XGen as well with a few more steps. There is a lot more that can be done with XGen, this lab is designed to just get your foot in the door as the setup and rendering with renderman can be annoying to figure out on your own.
 
-> (!info)
+> (!info)  
 > At the time of writing this lab there seems to be a problem with XGEN using Renderman in Maya 2022, you may need to be using Maya 2020 in order for it to work.
 
 # SETTING UP THE SCENE
 
-XGEN is very picky about its file structure, in order to get it to work you will need to have your project set with the model you are working with in that project.
+XGEN is very picky about its file structure, in order to get it to work you will need to have your project set with the model you are working with in that project.  
 Make sure you have the xgenToolkit plugin loaded in the plugin manager.  
 Find an object that you want to apply hair to. This can be a model from your short or a simple sphere. In this demo, I will be using the head model from Maya's built-in content browser. To find this go to Windows -> General Editors -> Content Browser. The model I'm using is in Modeling/Sculpting and Base Meshes/Bipeds/BasicHead.ma.  
-![](HeadModel.png)
-The next step is to separate out what parts of the geometry will have hair. If you are working on a model that is entirely covered in hair you can skip this step.
-Make a duplicate of the geometry you want the hair to be on and select only the faces that will have hair (It may help to hide the original mesh while selecting these faces).
-![](HairSelect.png)
+![](HeadModel.png)  
+The next step is to separate out what parts of the geometry will have hair. If you are working on a model that is entirely covered in hair you can skip this step.  
+Make a duplicate of the geometry you want the hair to be on and select only the faces that will have hair (It may help to hide the original mesh while selecting these faces).  
+![](HairSelect.png)  
 I changed the color of the duplicate mesh to make it clearer where I selected it.  
 Now press Ctrl-Shift-i to invert your selection.  
-![](HairSelectInverse.png)
+![](HairSelectInverse.png)  
 Delete those faces. This should leave you with just the faces that we want hair on, for our head that's just the scalp.  
 ![](Scalp.png)  
 Unhide the base model and slightly scale up the scalp so that it sits slightly on top of the main mesh.  
@@ -55,12 +56,12 @@ Pressing the left one will turn on / update the actual geometry of the hair. Pre
 
 Grooming is the process of cutting and shaping the hair similar to how you might in real life.
 
-Here are some good resources for a brief description for some of the grooming tools and useful hotkeys. (This guide may have some extra tools that you don't see in XGen when you use it)
-https://knowledge.autodesk.com/guidref/MAYAUL/2020/learn-explore/GUID-A00D16BD-9ECC-4C63-BAB5-B0278BF596BB
+Here are some good resources for a brief description for some of the grooming tools and useful hotkeys. (This guide may have some extra tools that you don't see in XGen when you use it)  
+https://knowledge.autodesk.com/guidref/MAYAUL/2020/learn-explore/GUID-A00D16BD-9ECC-4C63-BAB5-B0278BF596BB  
 https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Maya-CharEffEnvBuild/files/GUID-4033B20E-7277-48FA-906A-77F1275B2648-htm.html
 
 Most of these tools are fairly simple, just select the tool and start using the brush across the head to shape it. The length tool has a few parameters you need to get right.  
-![](Length.png)
+![](Length.png)  
 The goal length is the length you will be changing the hair to, and the increment determines how fast the hair changes, the main thing to note here is that in order to shorten the hair you need the goal length to be less than the current length, and the increment must be negative.
 
 There are also effects like noise and coil which can be applied in the Modifiers tab.  

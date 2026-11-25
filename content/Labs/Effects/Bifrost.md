@@ -5,18 +5,19 @@ tags:
 image: "[[THUMBNAIL_Bifrost.png]]"
 author:
 ---
+
 # INTRODUCTION
 
 This lab will cover simulation of water and fluids in Maya.  
 Please download the starter file attached below.  
-(You may need to right click, hit "Save link as ...". If it takes you to a new page filled with text just right click on that page and "Save as". If the file downloaded ends in ".ma.txt" or anything other than ".ma" rename it to have just ".ma" and ignore the warning)  
+(You may need to right click, hit "Save link as …". If it takes you to a new page filled with text just right click on that page and "Save as". If the file downloaded ends in ".ma.txt" or anything other than ".ma" rename it to have just ".ma" and ignore the warning)  
 [bifrost_lab_initial.ma](bifrost_lab_initial.ma)  
 Inside this file you will find an animated bowl and a tub. In this lab, you will fill the bowl and tub with water, then allow the water to simulate as the bowl tips over and falls into the tub.
 
-## Familiarize yourself with the scene
+## Familiarize Yourself with the Scene
 
 When it comes to character animation, the playback speed should be set to 24 fps. This ensures that the timing of actions is displayed correctly in the viewport, possibly at the expense of dropping some frames if the computer cannot play the animation fast enough. Simulation engines, however, calculate each frame based on the state of the system in the preceding frames, so it is crucial to set the playback speed to play every frame. For now, we just want to see the existing animation of the bowl, so we will temporarily set the Playback Speed to "Real-Time (24fps)"  
-Go to Windows > Settings > Preferences > Settings > Time Slider > Playback. Set the Playback Speed to Real Time [24 fps]. Press play and watch the bowl.
+Go to Windows > Settings > Preferences > Settings > Time Slider > Playback. Set the Playback Speed to Real Time [24 fps]. Press play and watch the bowl.  
 ![](bowl.gif)  
 Your animation should look like this, but slower.
 
@@ -68,27 +69,27 @@ This step will finally stop the water from falling through everything. Select th
 
 Don't forget the turn off the visibility of the cube after you are satisfied with the results.
 
-Now the water will behave as it should.
+Now the water will behave as it should.  
 ![](pour.gif)
 
 ## ADDING A MOTION FIELD
 
-You might notice that the water sticks to the bowl very strongly as it pours out. Let's pretend we don't like this, so we are going to add a motion field to force the water away from the bowl. Motion fields are used to force your liquid in any direction with any amount of strength.
+You might notice that the water sticks to the bowl very strongly as it pours out. Let's pretend we don't like this, so we are going to add a motion field to force the water away from the bowl. Motion fields are used to force your liquid in any direction with any amount of strength.  
 Place a cube right where you want to redirect the liquid.  
 ![](Bifrost9.png)
 
 Select both the cube and the liquid and click Bifrost Fluids > Add > Motion Field. Select bifrostMotionField in the outliner, go to the attribute editor and under the bifrostMotionFieldContainer tab go to the Field Direction attributes.
 
 Looking at the axis indicator on the lower left of the viewport, it looks like we want to push the water in the negative z and positive y directions. Set the direction to 0.00, 1.00, -1.00. Now the water should stick slightly less. Try playing with the direction magnitude.  
-![](Bifrost10.png)
+![](Bifrost10.png)  
 Don't forget the turn off the visibility of the cube after you are satisfied with the results.
 
 # MODIFICATIONS
 
 ## KILL PLANE
 
-This is useful if you don't want any stray particles falling down to infinity and crashing your computer. Select the liquid, and click Bifrost Fluids -> Add -> Kill Plane.
-Drag it down and put it under everything. Make it big enough to see, but Bifrost will assume it extends in all directions infinitely, so you don't need to make it huge.
+This is useful if you don't want any stray particles falling down to infinity and crashing your computer. Select the liquid, and click Bifrost Fluids -> Add -> Kill Plane.  
+Drag it down and put it under everything. Make it big enough to see, but Bifrost will assume it extends in all directions infinitely, so you don't need to make it huge.  
 ![](Bifrost13.png)
 
 ## TWEAKS
@@ -96,7 +97,7 @@ Drag it down and put it under everything. Make it big enough to see, but Bifrost
 There are many attributes that you can use to modify the simulation. Here are the most useful ones in the Attribute Editor.
 
 **Under bifrostLiquidContainer1:**  
-Container Attributes > Enable checkbox turns on and off the entire solver.
+Container Attributes > Enable checkbox turns on and off the entire solver.  
 Simulation Attributes start frame is where you can set your simulation to start at a different time.
 
 **Under bifrostLiquidPropertiesContainer1:**  
@@ -104,11 +105,11 @@ Master Voxel Size - controls the resolution of the simulation. The smaller the v
 
 # RENDERING & SUBMISSION
 
-Go to Bifrost Fluids > Compute and Cache to Disk > Option Box. Make sure Write Mode is set to Write All. This will save your simulation.
-Set the Master Voxel Size in the Resolution to 0.5 and play your whole simulation one last time. This will take a while. Take a nap.
+Go to Bifrost Fluids > Compute and Cache to Disk > Option Box. Make sure Write Mode is set to Write All. This will save your simulation.  
+Set the Master Voxel Size in the Resolution to 0.5 and play your whole simulation one last time. This will take a while. Take a nap.  
 When you're done, make a playblast of your simulation and turn it in to bCourses.
 
-## Rendering (optional for submission)
+## Rendering (Optional for sUbmission)
 
 Select the liquid and open the attribute editor. Go to Liquid Shape > Bifrost Meshing and check Enable.  
 ![](Bifrost15.png)  

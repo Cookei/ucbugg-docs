@@ -5,16 +5,17 @@ tags:
 image: "[[THUMBNAIL_Fluids.png]]"
 author:
 ---
+
 # INTRODUCTION
 
 Welcome to the fire lab!
 
-... You might be a bit confused about why the fire lab is called "fluids". This is because "fluids" refers to substances with no fixed shape, such as gas or liquids.
+… You might be a bit confused about why the fire lab is called "fluids". This is because "fluids" refers to substances with no fixed shape, such as gas or liquids.  
 In this case, that also involves gases, clouds, smoke, water, viscous fluids (think molten lava or mud), and pyrotechnics (fire, explosions)!  
 While Maya Fluids can be used to make liquid fluids such as water, we recommend using Maya Bifrost instead for such purposes because it is a tool dedicated specifically to such simulations. Our [Bifrost lab can be found here](http://ucbugg.com/static/index.html#labsbifrost).
 
 Download the starter file here:  
-(You may need to right click, hit "Save link as ...". If it takes you to a new page filled with text just right click on that page and "Save as". If the file downloaded ends in ".ma.txt" or anything other than ".ma" rename it to have just ".ma" and ignore the warning)  
+(You may need to right click, hit "Save link as …". If it takes you to a new page filled with text just right click on that page and "Save as". If the file downloaded ends in ".ma.txt" or anything other than ".ma" rename it to have just ".ma" and ignore the warning)  
 [fire.ma](fire.ma)
 
 # SIMULATION SETTINGS
@@ -53,11 +54,11 @@ We now have two fluid containers and two fluid emitters. Delete your original fl
 
 # MODIFICATIONS
 
-There are a few things you may want to adjust or learn about in case you need further modifications. Situate the container so that the bottom part of it is at the floor. You need to do this because simulations cannot exist outside the container, so you want the flames of the bonfire to fit inside this box. You can adjust the look of the fire by selecting the container, going to the Attribute Editor, and under the FlameShape modifying parameters in the Shading tab.
+There are a few things you may want to adjust or learn about in case you need further modifications. Situate the container so that the bottom part of it is at the floor. You need to do this because simulations cannot exist outside the container, so you want the flames of the bonfire to fit inside this box. You can adjust the look of the fire by selecting the container, going to the Attribute Editor, and under the FlameShape modifying parameters in the Shading tab.  
 You can adjust the quality of flames by manipulating the Base Resolution under Container Properties at the top of the attributes. If it is greyed out, check Keep Voxels Square options.
 
 Selecting the fluidEmitter tab in the Attribute Editor will give you access to the emission parameters, one of the most useful of which is Rate (Percent), which you can adjust to modify the intensity of the flames.  
-![](fire_lab_rate1.png)
+![](fire_lab_rate1.png)  
 ![](fire_lab_rate2.png)
 
 # SUBMISSION
