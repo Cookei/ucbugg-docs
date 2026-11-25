@@ -38,6 +38,8 @@ jobs:
           key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
           restore-keys: |
             ${{ runner.os }}-plugins-
+      - name: Restore Quartz executable permissions
+        run: chmod +x node_modules/.bin/quartz
       - name: Install Dependencies
         run: npm ci
       - name: Install Quartz plugins
