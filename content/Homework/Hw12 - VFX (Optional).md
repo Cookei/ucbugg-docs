@@ -4,14 +4,14 @@ tags:
 author:
 draft: false
 ---
+
 > [!bug] Outdated Labs
 > Note that these labs may be outdated and as such can contain potential bugs or errors.
+
 # Individual Work
 
 > [!todo] TODO: Effects Lab
 > Complete [any of the Effects labs](https://www.ucbugg.com/labs/effects).
->
-
 
 ## Deliverables
 
